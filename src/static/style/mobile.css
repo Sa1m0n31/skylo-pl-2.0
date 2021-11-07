@@ -1,0 +1,90 @@
+@media(min-width: 2000px) {
+    :root {
+        --siteWidth: clamp(200px, 90vw, 1800px);
+    }
+}
+
+@media(max-width: 1400px) {
+    .hero {
+        padding: 50px 0 30px;
+    }
+
+    .hero__main__header {
+        font-size: 42px;
+    }
+
+    .hero__main__text {
+        font-size: 17px;
+    }
+
+    .button--hero {
+        width: 250px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .hero__main__thin {
+        font-size: 14px;
+    }
+
+    .button--menu {
+        width: 35px;
+    }
+
+    .hero__header__logoWrapper {
+        width: 150px
+    }
+
+    .beforeMainHeader {
+        font-size: 14px;
+    }
+
+    .mainHeader {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .offer__item {
+        width: 32%;
+        padding: 30px 10px;
+    }
+
+    .section--offer > .text {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .offer__item__header {
+        font-size: 17px;
+    }
+
+    .offer__item .text--offerItem, .offer__item__link {
+        font-size: 14px;
+    }
+
+    .offer__item__link {
+        width: 90%;
+    }
+
+    .offer__item__img {
+        width: 70px;
+    }
+}
+
+@media(max-width: 996px) {
+    .offer__item {
+        width: 48%;
+    }
+}
+
+@media(max-width: 776px) {
+
+}
+
+@media(max-width: 576px) {
+
+}
