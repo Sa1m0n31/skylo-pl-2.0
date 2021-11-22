@@ -5,6 +5,7 @@ import icon3 from "../static/img/speedometer.svg";
 import icon4 from "../static/img/PLN.svg";
 import icon5 from "../static/img/speedometer.svg";
 import icon6 from "../static/img/security.svg";
+import vector from '../static/img/vector-3.png'
 import SingleStrength from "./SingleStrength";
 
 const TechStack = () => {
