@@ -1,0 +1,9 @@
+<svg id="product-description" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <path id="Path_652" data-name="Path 652" d="M69.531,0H5.469A5.475,5.475,0,0,0,0,5.469v7.813A5.475,5.475,0,0,0,5.469,18.75H69.531A5.475,5.475,0,0,0,75,13.281V5.469A5.475,5.475,0,0,0,69.531,0Z" fill="#fff"/>
+  <path id="Path_653" data-name="Path 653" d="M2.344,14.688H47.656a2.344,2.344,0,0,0,0-4.687H2.344a2.344,2.344,0,0,0,0,4.688Z" transform="translate(0 21.25)" fill="#fff"/>
+  <path id="Path_654" data-name="Path 654" d="M2.344,17.688H47.656a2.344,2.344,0,0,0,0-4.687H2.344a2.344,2.344,0,0,0,0,4.688Z" transform="translate(0 27.625)" fill="#fff"/>
+  <path id="Path_655" data-name="Path 655" d="M2.344,23.688H47.656a2.344,2.344,0,0,0,0-4.687H2.344a2.344,2.344,0,0,0,0,4.688Z" transform="translate(0 40.375)" fill="#fff"/>
+  <path id="Path_656" data-name="Path 656" d="M2.344,26.688H47.656a2.344,2.344,0,0,0,0-4.687H2.344a2.344,2.344,0,0,0,0,4.688Z" transform="translate(0 46.75)" fill="#fff"/>
+  <circle id="Ellipse_166" data-name="Ellipse 166" cx="9.5" cy="9.5" r="9.5" transform="translate(56 28)" fill="#fff"/>
+  <circle id="Ellipse_167" data-name="Ellipse 167" cx="9.5" cy="9.5" r="9.5" transform="translate(56 56)" fill="#fff"/>
+</svg>

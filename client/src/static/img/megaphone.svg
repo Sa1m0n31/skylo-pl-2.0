@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84.993" height="75" viewBox="0 0 84.993 75">
+  <g id="megaphone" transform="translate(0 -30.098)">
+    <g id="Group_114" data-name="Group 114" transform="translate(0 30.098)">
+      <g id="Group_113" data-name="Group 113" transform="translate(0 0)">
+        <path id="Path_612" data-name="Path 612" d="M57.495,30.1a7.513,7.513,0,0,0-7.26,5.618L22.092,45.1H7.5A7.508,7.508,0,0,0,0,52.6v15a7.508,7.508,0,0,0,7.5,7.5h.1l2.564,23.977c.352,3.282,4.386,7,9.155,5.8a7.51,7.51,0,0,0,5.5-8.89l-.544-5.893c.052,0,.1.008.157.008H27.5a7.508,7.508,0,0,0,7.5-7.5V79.4l15.238,5.079a7.5,7.5,0,0,0,14.76-1.881v-45A7.508,7.508,0,0,0,57.495,30.1ZM18.1,100.018a2.5,2.5,0,0,1-2.99-1.681L12.626,75.094h5.247C20,98.11,19.855,96.71,19.924,96.984A2.5,2.5,0,0,1,18.1,100.018ZM20,70.094H7.5a2.5,2.5,0,0,1-2.5-2.5v-15a2.5,2.5,0,0,1,2.5-2.5H20Zm10,12.5a2.5,2.5,0,0,1-2.5,2.5H24.435a2.5,2.5,0,0,0-.611.078l-.905-9.8L30,77.729Zm20-3.468L25,70.792V49.4l25-8.333Zm10,3.468a2.5,2.5,0,0,1-5,0v-45a2.5,2.5,0,0,1,5,0Z" transform="translate(0 -30.098)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_116" data-name="Group 116" transform="translate(69.993 55.096)">
+      <g id="Group_115" data-name="Group 115" transform="translate(0 0)">
+        <path id="Path_613" data-name="Path 613" d="M434.143,180.686h-10a2.5,2.5,0,1,0,0,5h10a2.5,2.5,0,1,0,0-5Z" transform="translate(-421.644 -180.686)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_118" data-name="Group 118" transform="translate(69.993 40.097)">
+      <g id="Group_117" data-name="Group 117">
+        <path id="Path_614" data-name="Path 614" d="M436.377,91.713a2.5,2.5,0,0,0-3.354-1.118l-10,5a2.5,2.5,0,1,0,2.236,4.472l10-5A2.5,2.5,0,0,0,436.377,91.713Z" transform="translate(-421.641 -90.33)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_120" data-name="Group 120" transform="translate(69.993 65.094)">
+      <g id="Group_119" data-name="Group 119">
+        <path id="Path_615" data-name="Path 615" d="M435.258,246.181l-10-5a2.5,2.5,0,0,0-2.236,4.472l10,5a2.5,2.5,0,1,0,2.236-4.472Z" transform="translate(-421.641 -240.917)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
