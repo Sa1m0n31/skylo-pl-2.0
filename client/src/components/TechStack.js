@@ -20,7 +20,7 @@ const TechStack = () => {
 
     return <section className="section section--strengths">
         <h3 className="whiteHeader">
-            W czym pracujemy? Poznaj nasze zaplecze
+            W czym pracujemy?<span className="d-mobile"><br/></span> Poznaj nasze zaplecze
         </h3>
         <main className="strengths flex">
             {stack.map((item, index) => {

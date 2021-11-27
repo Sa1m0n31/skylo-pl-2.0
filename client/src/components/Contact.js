@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import image from '../static/img/kontakt.svg'
 import checkIcon from '../static/img/check.png'
+import arrowDown from '../static/img/arrow-down.svg'
 
 const Contact = () => {
     const typesOfProjects = ['strona www', 'sklep internetowy', 'aplikacja webowa', 'projekt graficzny', 'projekt UX/UI', 'inny temat'];
@@ -21,7 +22,7 @@ const Contact = () => {
                 Skontaktuj się z nami
             </span>
             <h2 className="mainHeader">
-                Przekonaliśmy Cię? Napisz do nas!
+                Przekonaliśmy Cię?<span className="d-mobile"><br/></span> Napisz do nas!
             </h2>
            <main className="contact__main flex">
                <section className="contact__left">
@@ -31,7 +32,7 @@ const Contact = () => {
                    <h3 className="contact__header">
                        Najpierw zaznacz, czego potrzebujesz
                    </h3>
-                   <section className="contact__left__buttons">
+                   <section className="contact__left__buttons d-desktop">
                        {typesOfProjects.map((item, index) => {
                            return <label className={index === typeOfProject ? "contact__left__label contact__left__label--selected" : "contact__left__label"} key={index}>
                                <button className="contact__left__button center" onClick={() => { setTypeOfProject(index); }}></button>
@@ -39,8 +40,15 @@ const Contact = () => {
                            </label>
                        })}
                    </section>
+                   <section className="contact__left__buttons d-mobile">
+                       <label className="contact__left__label contact__left__label--selected">
+                           <button className="contact__left__button center"></button>
+                           Strony www
+                       </label>
+                       <img className="contact__left__label__arrow" src={arrowDown} alt="rozwin" />
+                   </section>
                </section>
-               <figure className="contact__right">
+               <figure className="contact__right d-1200">
                    <img className="contact__img" src={image} alt="agencja-interaktywna-brodnica" />
                </figure>
            </main>
@@ -80,7 +88,9 @@ const Contact = () => {
                 <button className={agree ? "contact__left__button contact__left__button--agree" : "contact__left__button"} onClick={() => { setAgree(!agree); }}>
 
                 </button>
-                Zapoznałem się i akceptuję postanowienia <a href="" className="label--agreement__link">Polityki prywatności</a>.
+                <span>
+                    Zapoznałem się i akceptuję postanowienia <a href="" className="label--agreement__link">Polityki prywatności</a>.
+                </span>
             </label>
             <button className="contact__submitBtn">
                 Wyślij formularz

@@ -13,12 +13,15 @@ const AboutUsSection = () => {
            <p className="text">
                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
            </p>
+           <figure className="aboutUs__right d-mobile">
+               <img className="btn__img" src={img} alt="agencja-interaktywna-bydgoszcz" />
+           </figure>
            <a className="button button--aboutUs center" href="/o-nas">
                Dowiedz się więcej
            </a>
        </article>
 
-       <figure className="aboutUs__right">
+       <figure className="aboutUs__right d-desktop">
            <img className="btn__img" src={img} alt="agencja-interaktywna-bydgoszcz" />
        </figure>
     </section>

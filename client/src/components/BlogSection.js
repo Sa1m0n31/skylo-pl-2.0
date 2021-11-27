@@ -2,7 +2,7 @@ import React from 'react'
 import blog from '../data/blog'
 
 const BlogSection = () => {
-    return <section className="section section--blog">
+    return <section className="section section--blog d-desktop">
         <span className="beforeMainHeader">
             Blog
         </span>

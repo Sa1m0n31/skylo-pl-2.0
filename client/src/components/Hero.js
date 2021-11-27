@@ -156,7 +156,7 @@ const Hero = () => {
                     Darmowa wycena
                 </a>
                 <p className="hero__main__thin">
-                    Projektujemy i wdrażamy strony www, sklepy internetowe, aplikacje webowe. Tworzymy także projekty graficzne. Wyróżnij się z tłumu i pokaż swoją markę w internecie. Stawiamy na oryginalne oraz indywidualne podejście i tworzymy unikalne projekty.
+                    Projektujemy i wdrażamy strony www, sklepy internetowe, aplikacje webowe. Tworzymy także projekty graficzne.<span className="d-desktop"> Wyróżnij się z tłumu i pokaż swoją markę w internecie. Stawiamy na oryginalne oraz indywidualne podejście i tworzymy unikalne projekty.</span>
                 </p>
             </main>
 
