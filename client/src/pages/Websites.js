@@ -73,7 +73,7 @@ const Websites = () => {
                 Proces tworzenia strony internetowej dla Ciebie Droga do własnej witryny w 5 krokach
             </h3>
             <section className="offer__points">
-                <img className="offer__points__img" src={points} alt="wlasna-strona-internetowa" />
+                <img className="offer__points__img d-over-900" src={points} alt="wlasna-strona-internetowa" />
                 <article className="offer__points__content">
                     <p className="offer__points__item">
                         <span className="red">1. Analiza Twoich celów i wizji</span> - naszą współpracę zaczynamy od przeanalizowania Twoich celów, a także poznania Twojej koncepcji dotyczącej designu strony. Chcemy stworzyć taki projekt, który jednocześnie będzie podobał się Tobie, klientom, ale także będzie spełniał wszystkie wymagane funkcje, zgodne z Twoimi celami oraz standardami UX/UI.

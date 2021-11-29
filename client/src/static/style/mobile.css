@@ -50,15 +50,31 @@
     .menu__contact__link {
         font-size: 15px;
     }
+
+    .container--websites .offer__heading {
+        max-width: 100%;
+    }
+
+    .offer__heading--websites2 {
+        margin-top: 25px;
+    }
 }
 
 @media(max-width: 1500px) {
     .offer__heading--second {
         margin-top: -100px;
     }
+
+    .container--graphicalProjects .websites__section {
+        margin-top: 30px;
+    }
 }
 
 @media(max-width: 1400px) {
+    .strength__header {
+        font-size: 16px;
+    }
+
     .hero {
         padding: 50px 0 30px;
     }
@@ -97,6 +113,7 @@
         font-size: 32px;
     }
 
+    .offer__points__item,
     .text {
         font-size: 14px;
     }
@@ -174,6 +191,29 @@
         font-size: 12px;
         max-width: 200px;
     }
+
+    .aboutUs__frame {
+        height: 300px;
+    }
+
+    .aboutUs__bottom__imgWrapper {
+        width: 35%;
+        margin-top: 40px;
+    }
+
+    .aboutUs__bottom__img {
+        width: 100%;
+    }
+
+    .button--aboutUs {
+        width: 300px;
+    }
+
+    .smallPortfolio__main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -228,9 +268,49 @@
     .footer__list__link {
         font-size: 12px;
     }
+
+    .aboutUs__frame__header {
+        font-size: 17px;
+    }
+
+    .aboutUs__frame__text {
+        font-size: 14px;
+    }
+
+    .aboutUs__bottom__imgWrapper {
+        display: none;
+    }
+
+    .container--graphicalProjects .websites__section {
+        margin-top: 70px;
+    }
+
+    .container--graphicalProjects .offer__heading--100 {
+        margin-top: 40px;
+    }
+
+    .container--ecommerce .websites__section {
+        margin-top: 30px;
+    }
+
+    .container--ecommerce .offer__heading--websites2 {
+        margin-top: 50px;
+    }
+
+    .container--webapps .websites__section__content .offer__heading {
+        margin-top: 30px;
+    }
 }
 
 @media(max-width: 996px) {
+    .d-900 {
+        display: block !important;
+    }
+
+    .d-over-900 {
+        display: none !important;
+    }
+
     .offer__item {
         width: 48%;
     }
@@ -265,6 +345,10 @@
 
     .blog__item__excerpt {
         font-size: 14px;
+    }
+
+    .section--footer {
+        margin-top: 60px;
     }
 
     .section--footer > .flex {
@@ -312,6 +396,162 @@
     .container {
         padding-bottom: 20px;
     }
+
+    .section--shortContactForm__imgWrapper {
+        display: none;
+    }
+
+    .shortForm {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .contactPage__link {
+        font-size: 20px;
+    }
+
+    .aboutUs__frames {
+        flex-direction: column;
+    }
+
+    .aboutUs__frame {
+        width: 100%;
+        height: auto;
+    }
+
+    .offer__firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer__img {
+        margin: 35px auto;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .offer__heading {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .text--offer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .etape {
+        width: 100%;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .etape--1 {
+        max-width: 100%;
+    }
+
+    .offer__heading--second {
+        margin-top: 0;
+    }
+
+    .shortForm {
+        margin: 20px auto;
+    }
+
+    .websites__section {
+        flex-direction: column;
+    }
+
+    .websites__section > * {
+        width: 100%;
+    }
+
+    .container--websites .text {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .container--websites .heading {
+        text-align: center;
+    }
+
+    .websites__imgWrapper {
+        margin-bottom: 40px;
+    }
+
+    .offer__websites__frames {
+        flex-direction: column;
+    }
+
+    .offer__websites__frames .aboutUs__frame {
+        height: auto;
+    }
+
+    .ux__section--1,
+    .ux__section--2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ux__imgWrapper {
+        width: 100% !important;
+        margin: 25px auto;
+    }
+
+    .ux__content {
+        width: 100% !important;
+        max-width: 500px;
+    }
+
+    .strengths--websites .strength {
+        width: 100%;
+    }
+
+    .websites__section .offer__heading {
+        text-align: center;
+        max-width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .offer__points {
+        height: auto !important;
+        margin: 20px 0 0 !important;
+    }
+
+    .offer__points__content {
+        margin-left: 0;
+        height: auto;
+    }
+
+    .offer__points__item {
+        text-align: center;
+        margin: 10px 0 !important;
+    }
+
+    .ux__section--1,
+    .ux__section--2 {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container--ux .ux__section--1,
+    .container--webapps .ux__section--2 {
+        margin-top: 0;
+     }
+
+    .container--ecommerce .websites__imgWrapper {
+        width: 80%;
+    }
+
+    .container--ux .websites__section__content .offer__heading {
+        font-size: 22px;
+    }
+
+    .container--ux .websites__imgWrapper {
+        width: 80%;
+    }
 }
 
 @media(max-width: 776px) {
@@ -321,6 +561,33 @@
 
     .d-mobile {
         display: block !important;
+    }
+
+    .emailResult {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .shortForm .error,
+    .shortForm .result {
+        margin-left: auto;
+    }
+
+    .section--shortContactForm .flex {
+        margin-top: 0;
+    }
+
+    .error, .result {
+        font-size: 14px;
+    }
+
+    .pageHeader {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .page {
+        margin-top: 100px;
     }
 
     .hero__header {
@@ -577,6 +844,140 @@
         font-size: 13px;
         margin-top: 0;
         flex-direction: column;
+    }
+
+    .menu {
+        justify-content: flex-start;
+        padding-top: 0;
+    }
+
+    .menu__header {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .menu__menu {
+        margin: 20px auto 5px;
+        text-align: center;
+    }
+
+    .menu__menu__list__link {
+        font-size: 18px;
+    }
+
+    .menu__bottom > section {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .menu__form {
+        align-items: center;
+    }
+
+    .menu__form__header,
+    .menu__contact__link {
+        font-size: 12px;
+    }
+
+    .menu__contact__link__img {
+        width: 15px;
+        margin-right: 15px;
+    }
+
+    .menu__back {
+        top: 8px;
+        left: 8px;
+        font-size: 12px;
+    }
+
+    .menu__back__img {
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    .pageHeader__logoWrapper {
+        width: 160px;
+    }
+
+    .contact__flex {
+        flex-direction: column;
+    }
+
+    .contactPage__link {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .contactPage__link__img {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .contact__bottomHeader h3 {
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .offer__heading {
+        max-width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container--contact .offer__heading {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .shortForm {
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .label--agreement,
+    .contact__submitBtn,
+    .label {
+        max-width: 100%;
+    }
+
+    .container--contact .label--agreement__link {
+        margin-left: 0;
+    }
+
+    .aboutUs__bottom__content {
+        width: 100%;
+    }
+
+    .aboutUs__buttons {
+        flex-direction: column;
+    }
+
+    .aboutUs__buttons .button--aboutUs:first-of-type {
+        margin-right: auto;
+    }
+
+    .button--aboutUs {
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .aboutUs__buttons__img {
+        width: 15px;
+    }
+
+    .smallPortfolio__main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 }
 

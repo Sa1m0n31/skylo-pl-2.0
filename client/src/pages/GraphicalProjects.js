@@ -2,9 +2,7 @@ import React from 'react'
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 import vector from "../static/img/vector-3.png";
-import ux from "../data/ux";
 import SingleStrength from "../components/SingleStrength";
-import points from "../static/img/points.svg";
 import SmallPortfolio from "../components/SmallPortfolio";
 import ShortContactForm from "../components/ShortContactForm";
 import graphicalProjects from "../data/graphicalProjects";
@@ -64,13 +62,16 @@ const GraphicalProjects = () => {
             </main>
 
             <section className="flex ux__section--2">
-                <figure className="ux__imgWrapper">
+                <figure className="ux__imgWrapper d-over-900">
                     <img className="btn__img" src={graphicalProjects.secondImage} alt={graphicalProjects.fourthHeader} />
                 </figure>
                 <article className="ux__content">
                     <h3 className="offer__heading">
                         {graphicalProjects.fourthHeader}
                     </h3>
+                    <figure className="ux__imgWrapper d-900">
+                        <img className="btn__img" src={graphicalProjects.secondImage} alt={graphicalProjects.fourthHeader} />
+                    </figure>
                     <section className="text">
                         <p>
                             {graphicalProjects.fourthParagraph[0]}

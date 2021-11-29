@@ -1,59 +1,39 @@
-import mainImg from "../static/img/grafika-main.svg";
-import icon1 from "../static/img/grafika-1.svg";
-import icon2 from "../static/img/grafika-2.svg";
-import icon3 from "../static/img/grafika-3.svg";
-import frame1 from "../static/img/grafika-frame-1.svg";
-import frame2 from "../static/img/grafika-frame-2.svg";
-import frame3 from "../static/img/grafika-frame-3.svg";
-import secondImg from "../static/img/projektowanie-graficzne.png";
+import mainImg from "../static/img/aplikacje-webowe-brodnica.svg";
+import secondImg from '../static/img/aplikacje-webowe-torun.png'
+import icon1 from '../static/img/click.svg'
+import icon2 from '../static/img/int.svg'
+import icon3 from '../static/img/safe.svg'
 
 const webApps = {
-    firstHeader: 'Projektowanie graficzne',
-    firstParagraph: 'Nasza oferta nie ogranicza związana z projektowaniem to także projektowanie graficzne, np. reklam, banerów, wizytówek, ulotek etc. Projektujemy zarówno grafikę do Internetu, jak i do druku. Stworzymy unikalny wizerunek Twojej firmy. Pracujemy na licencjonowanym oprogramowaniu Adobe, które stwarza szerokie możliwości w tworzeniu grafiki - zarówno wektorowej, rastrowej, a także przy obróbce zdjęć czy montażu wideo. Nasza oferta dotycząca projektowania graficznego skierowana jest do Klientów, którzy chcą nadać swojej marce lub firmie unikalny charakter. Projekty, takie jak np. wizytówki czy banery, tworzymy od zera lub jesteśmy w stanie przygotować projekt w oparciu o istniejący przyjęty standard.',
-    secondHeader: 'Pokaż się z dobrej strony. Nadaj firmie unikalny charakter',
-    secondParagraph: 'Nie da się ukryć, że dobrze "opakowany" produkt czy dobrze zaprojektowany wizerunek firmy pomaga osiągać nam nasze cele. Aspekty wizualne mogą być dostrzegane w pierwszej kolejności przez potencjalnego odbiorcę, dlatego ważnym jest w odpowiedni sposób zadbać o wizerunek swojej marki. Pomożemy Ci pokazać się z dobrej strony. Dzięki naszym umiejętnościom i doświadczeniu tworzymy projekty, które zdecydowanie wyróżnią Cię spośród innych na rynku.',
+    firstHeader: 'Aplikacje webowe',
+    firstParagraph: 'W zakres naszych usług wchodzi także tworzenie dedykowanych aplikacji webowych. Jesteśmy w stanie zaprojektować cały interfejs, a także wdrożyć go i uruchomić z wykorzystaniem nowoczesnych technologii. W tworzeniu aplikacji internetowych wykorzystujemy swoją wiedzę z zakresu projektowania, aby aplikacja cechowała się dobrym designem i była przyjemna w odbiorze, oraz wiedzę i umiejętności z zakresu programowania, dzięki czemu wdrażane aplikacje działają bez szwanku. To połączenie gwarantuje duże wsparcie w realizacji założonych przez Ciebie celów oraz przeznaczenia, jakie ma spełniać Twoja aplikacja webowa.',
+    secondHeader: 'Czym jest aplikacja www? Wyjaśniamy!',
+    secondParagraph: 'Aplikacja internetowa jest z definicji programem, który działa na bardzo podobnej zasadzie jak zwykła strona www. Jednak to nie jest to samo. Aplikacja webowa stwarza wiele więcej możliwości interakcji użytkownika oraz oferuje wiele funkcjonalności, których nie zobaczymy na zwykłej witrynie. Przykładem aplikacji webowej jest np. popularna platforma Netflix. Warto też dodać, że do uruchomienia aplikacji www wystarczy jedynie przeglądarka internetowa.',
     mainImage: mainImg,
-    thirdHeader: 'Co możemy dla Ciebie stworzyć?',
+    thirdHeader: 'Cechy aplikacji internetowych',
     strengths: [
         {
             title: 'Dobry design',
             icon: icon1,
-            text: 'Brzmi banalnie, ale dobry design to podstawa. Projekt musi być przyjemny dla oka i wywoływać pozytywne skojarzenia u potencjalnych odbiorców, aby łatwo i szybko zapadał w pamięć.'
+            text: 'Aplikacje webowe są bezpośrednio uruchamiane w przeglądarkach, internetowych (np. Mozilla, Chrome) dlatego użytkownik nie musi ich pobierać, instalować czy aktualizować.'
         },
         {
-            title: 'Czytelność',
+            title: 'Intuicyjność i wygoda',
             icon: icon2,
-            text: 'Odpowiedni dobór fontów, właściwa kolorystyka i styl tekstu oraz elementów to szalenie ważny element każdego projektu. Nikt nie powinien mieć problemów z odbiorem informacji.'
+            text: 'Aplikacje www są tworzone w trosce o wygodę dla użytkownika, dlatego cechuje je wysoki poziom intuicyjności i prostoty obsługi, aby uniknąć problemów z poruszaniem się po interfejsie.'
         },
         {
-            title: 'Jasny przekaz',
+            title: 'Bezpieczeństwo',
             icon: icon3,
-            text: 'Ta cecha trochę łączy się z poprzednią, ale warto ją dodatkowo wyróżnić - przekaz naszego projektu powinien być łatwy, prosty i maksymalnie bezpośredni, jeśli chcemy od razu trafić do odbiorcy.'
+            text: 'Przy wdrażaniu aplikacji webowych stosuje się zabezpieczenia wysokiej jakości zarówno po stronie użytkownika, jak i administratora. Przechowywane dane są maksymalnie bezpieczne.'
         },
-    ],
-    frames: [
-        {
-            icon: frame1,
-            title: 'Logotypy',
-            text: 'Logotyp to bardzo ważny element identyfikacji marki. Może sugerować odbiorcy branżę, profesję czy charakter.'
-        },
-        {
-            icon: frame2,
-            title: 'Projekty do druku',
-            text: 'Tworzymy projekty przeznaczone do druku: wizytówki, ulotki, plakaty, banery, okładki etc.'
-        },
-        {
-            icon: frame3,
-            title: 'Grafika do internetu',
-            text: 'Realizujemy również projekty przeznaczone do Internetu: social media, banery, slidery etc.'
-        }
     ],
     secondImage: secondImg,
-    fourthHeader: 'Identyfikacja wizualna marki',
+    fourthHeader: 'Czym różni się aplikacja web od strony www?',
     fourthParagraph: [
-        'Stworzenie odpowiedniego wizerunku firmy i nadanie jej osobliwego charakteru to kluczowy element do realizacji założonych celów. Wizerunek, który wywołuje dobre skojarzenia i zapada w pamięć, zwiększa szanse na dotarcie marki do potencjalnych odbiorców.',
-        'Na wizerunek firmy, czyli identyfikację, składa się szereg odpowiednio dobranych i współgrających ze sobą elementów, są to m.in. znaki, kolorystyka czy krój pisma (fonty, ich styl, rozmiary etc.). Nasza agencja pomoże Ci w stworzeniu tych elementów, aby finalnie wykreować odpowiedni wizerunek Twojej firmy.',
-        'Odpowiednia identyfikacja wizualna firmy to taka, która oddaje charakter marki. Jednym z pierwszych etapów planowania wizerunku jest rozpoznanie i analiza - marki, celów, przeznaczenia czy branży. Na podstawie wyciągniętych wniosków należy później dobrać właściwy szereg elementów, które zebrane w całość stworzą nam unikalny wizerunek naszej firmy.'
+        'Istnieje kilka istotnych różnic pomiędzy aplikacją webową a stroną www. Ich dostrzeżenie i zrozumienie ułatwi nam zadanie w podjęciu decyzji, która z wyżej wymienionych realizacji jest lepsza i bardziej korzystna dla założonych przez Ciebie celów.',
+        'Strona internetowa służy z założenia tylko do przekazywania informacji. Nie oferuje użytkownikowi żadnych możliwości interakcji - w przeciwieństwie do aplikacji internetowej. Możliwość zakładania kont, kupowania, rezerwowania, dodawania etc. - te funkcjonalności składają się na cechy aplikacji www. Istnieją również różnice po stronie technologicznej, takie jak wykorzystywane technologie przy tworzeniu czy utrzymywaniu aplikacji www, która jest zdecydowanie bardziej rozbudowana pod tym kątem od zwykłej witryny.',
+        'Warto jednak zaznaczyć, że w tym przypadku nie ma z góry narzuconego lepszego wyboru. Decyzja pomiędzy aplikacją webową a stroną www zależy przede wszystkim od tego, jaki cel ma spełniać nasza witryna. Jeśli chcemy dać użytkownikowi możliwość interakcji, które doprowadzą go do wykonania konkretnego działania (np. dokonanie zakupu czy rezerwacja) to wybierzemy aplikację www. Jeśli natomiast chcemy dać użytkownikowi tylko informacje, należy wówczas wybrać stronę internetową.'
     ]
 }
 

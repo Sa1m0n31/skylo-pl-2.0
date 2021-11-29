@@ -9,10 +9,12 @@ import heroData from '../data/hero'
 import phoneIcon from '../static/img/phone-menu.svg'
 import mailIcon from '../static/img/mail-icon.svg'
 import infoIcon from '../static/img/info-menu.svg'
+import axios from "axios";
 
 const Hero = () => {
     const [email, setEmail] = useState("");
     const [emailResult, setEmailResult] = useState(0);
+    const [loader, setLoader] = useState(false);
 
     const menu = useRef(null);
 
@@ -41,10 +43,21 @@ const Hero = () => {
         }, 400);
     }
 
+    useEffect(() => {
+        console.log(loader);
+    }, [loader]);
+
     const handleSubmit = () => {
         if(isEmail(email)) {
-            setEmail("");
-            setEmailResult(1);
+            setLoader(true);
+            axios.post('http://localhost:5000/send-email', {
+                email
+            })
+                .then((res) => {
+                    setLoader(false);
+                    setEmail("");
+                    setEmailResult(res?.data?.result);
+                });
         }
         else {
             setEmailResult(-1);
@@ -56,6 +69,9 @@ const Hero = () => {
             setTimeout(() => {
                 setEmailResult(0);
             }, 2000);
+        }
+        else if(emailResult === 0) {
+            document.querySelector(".menu__form__btn").style.opacity = "1";
         }
     }, [emailResult]);
 
@@ -82,7 +98,7 @@ const Hero = () => {
                             })}
                         </ul>
                     </menu>
-                    <figure className="menu__imgWrapper">
+                    <figure className="menu__imgWrapper d-desktop">
                         <img className="btn__img" src={developerImg} alt="agencja-interaktywna-torun" />
                     </figure>
                 </section>
@@ -101,7 +117,7 @@ const Hero = () => {
                             <img className="menu__contact__link__img" src={mailIcon} alt="adres-email" />
                             kontakt@skylo.pl
                         </a>
-                        <span className="menu__contact__link">
+                        <span className="menu__contact__link d-desktop">
                             <img className="menu__contact__link__img" src={infoIcon} alt="informacje" />
                             Agencja Interaktywna Skylo.pl<br/>
                             ul. Kościuszki 34/19,<br/>
@@ -117,15 +133,16 @@ const Hero = () => {
                         <label>
                             <input className="input input--menu"
                                    value={email}
+                                   onKeyDown={(e) => { if(e.keyCode === 13) handleSubmit(); }}
                                    onChange={(e) => { setEmail(e.target.value); }}
                                    placeholder="Adres e-mail" />
                         </label>
-                        {!emailResult ? <button className="menu__form__btn center" onClick={() => { handleSubmit(); }}>
+                        {!emailResult ? (!loader ? <button className="menu__form__btn center" onClick={() => { handleSubmit(); }}>
                             Wyślij formularz
-                        </button> : <span className="emailResult">
+                        </button> : <div className="loader"></div>) : (!loader ? <span className="emailResult">
                             {emailResult === -1 ? "Wpisz poprawny adres e-mail" : "Dziękujemy! Skontaktujemy się z Tobą w ciągu 24h! W razie braku wiadomości, sprawdź folder spam."}
-                        </span>}
-                        <img className="menu__form__logo" src={logo} alt="agencja-interaktywna-brodnica" />
+                        </span> : <div className="loader"></div>)}
+                        <img className="menu__form__logo d-desktop" src={logo} alt="agencja-interaktywna-brodnica" />
                     </section>
                 </section>
             </aside>
@@ -153,6 +170,9 @@ const Hero = () => {
                     Miliony gwiazd na niebie, ale tylko jedna galaktyka, w której istniejemy. Wyróżnij się spośród wielu. Stworzymy Twój unikalny wizerunek w sieci.
                 </p>
                 <a className="button button--hero center" href="/kontakt">
+                    <svg>
+                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                    </svg>
                     Darmowa wycena
                 </a>
                 <p className="hero__main__thin">

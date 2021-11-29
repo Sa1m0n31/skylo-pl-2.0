@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 const app = express();
+require('dotenv').config()
 const nodemailer = require("nodemailer");
 const smtpTransport = require('nodemailer-smtp-transport');
 
@@ -61,34 +62,52 @@ app.get("/blog/*", (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
+/* Nodemailer */
+let transporter = nodemailer.createTransport(smtpTransport ({
+    auth: {
+        user: process.env.MAIL,
+        pass: process.env.PASSWORD
+    },
+    host: process.env.HOST,
+    secureConnection: true,
+    port: 465,
+    tls: {
+        rejectUnauthorized: false
+    },
+}));
+
 /* Send form endpoints */
 app.post("/send-form", (request, response) => {
     const { name, email, phoneNumber, msg, category } = request.body;
 
-    /* Nodemailer */
-    let transporter = nodemailer.createTransport(smtpTransport ({
-        auth: {
-            user: 'powiadomienia@skylo-pl.atthost24.pl',
-            pass: 'SwinkaPeppa-31'
-        },
-        host: 'skylo-pl.atthost24.pl',
-        secureConnection: true,
-        port: 465,
-        tls: {
-            rejectUnauthorized: false
-        },
-    }));
-
     let mailOptions = {
-        from: 'powiadomienia@skylo-pl.atthost24.pl',
+        from: process.env.MAIL,
         to: 'kontakt@skylo.pl',
         subject: 'Nowe zgłoszenie w formularzu kontaktowym',
         html: `<h1>Nowe zgłoszenie w formularzu kontaktowym</h1>
-               <p><b>Kategoria:</b> ${category}</p> 
+               <p><b>Kategoria:</b> ${category ? category : "Brak"}</p> 
                <p><b>Nazwa:</b> ${name}</p> 
-               <p><b>Numer telefonu:</b> ${phoneNumber}</p> 
-               <p><b>Adres email:</b> ${email}</p> 
-               <p><b>Wiadomość:</b> ${msg}</p>`
+               <p><b>Numer telefonu:</b> ${phoneNumber ? phoneNumber : "Brak"}</p> 
+               <p><b>Adres email:</b> ${email ? email : "Brak"}</p> 
+               <p><b>Wiadomość:</b> ${msg ? msg : "Brak"}</p>`
+    }
+
+    transporter.sendMail(mailOptions, function(error, info) {
+        response.send({
+            result: 1
+        });
+    });
+});
+
+app.post("/send-email", (request, response) => {
+    const { email } = request.body;
+
+    let mailOptions = {
+        from: process.env.MAIL,
+        to: 'kontakt@skylo.pl',
+        subject: 'Ktoś prosi o kontakt',
+        html: `<h1>Nowe zgłoszenie w formularzu kontaktowym</h1>
+               <p><b>Email:</b> ${email}`
     }
 
     transporter.sendMail(mailOptions, function(error, info){

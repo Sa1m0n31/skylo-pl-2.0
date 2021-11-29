@@ -41,10 +41,10 @@ const Offer = () => {
                 <span className="red">2. Propozycja projektu, wizualizacje</span> - kiedy poznamy już Twoje wszystkie potrzeby i wymagania, nadchodzi pora na to, aby przygotować Ci wizualizację Twojego produktu. Przygotowujemy wizualizację, która pokazuje jak finalnie może wyglądać Twój projekt. Jeśli przedstawiona pierwotna propozycja Ci się nie spodoba, to wówczas wprowadzamy wszystkie Twoje poprawki. Nie przystąpimy do dalszych etapów dopóki projekt w stu procentach nie spełni Twoich oczekiwań.
             </p>
             <p className="etape etape--3">
-                <span className="red">3. xxxxxxxxx, xxxxxxxxxxxxx</span> - jeśli przedstawiona przez nas makieta strony w pełni Cię zadowala, to ruszamy z wdrażaniem projektu. Zaplecze techniczne przygotowujemy z wykorzystaniem najnowszych technologii, używając zaawansowanych środowisk programistycznych. Projekt może zostać również przekazany dalej, jeśli chcesz sam zająć się tematem kodowania strony.
+                <span className="red">3. Wdrożenie projektu</span> - jeśli przedstawiona przez nas makieta strony w pełni Cię zadowala, to ruszamy z wdrażaniem projektu. Zaplecze techniczne przygotowujemy z wykorzystaniem najnowszych technologii, używając zaawansowanych środowisk programistycznych. Projekt może zostać również przekazany dalej, jeśli chcesz sam zająć się tematem kodowania strony.
             </p>
             <p className="etape etape--4">
-                <span className="red">4. Finalizacja xxxxxxxx, testowanie, uruchomienie</span> - po ostatecznej akceptacji przechodzimy do finalizacji tworzonego dla Ciebie projektu. To miejsce na ostatnie ewentualne poprawki oraz testowanie i sprawdzenie wszystkich funkcjonalności i elementów.
+                <span className="red">4. Finalizacja, testowanie, uruchomienie</span> - po ostatecznej akceptacji przechodzimy do finalizacji tworzonego dla Ciebie projektu. To miejsce na ostatnie ewentualne poprawki oraz testowanie i sprawdzenie wszystkich funkcjonalności i elementów.
             </p>
         </section>
         <ShortContactForm />

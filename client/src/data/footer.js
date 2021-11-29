@@ -1,23 +1,23 @@
 const footer = {
     offer: [
-        { name: 'Tworzenie stron www', link: '/tworzenie-stron-www' },
-        { name: 'Tworzenie sklepów internetowych', link: '/tworzenie-stron-www' },
-        { name: 'Projektowanie graficzne', link: '/tworzenie-stron-www' },
-        { name: 'Projekty UX/UI', link: '/tworzenie-stron-www' },
-        { name: 'Tworzenie aplikacji webowych', link: '/tworzenie-stron-www' },
-        { name: 'Obsługa techniczna IT', link: '/tworzenie-stron-www' }
+        { name: 'Tworzenie stron www', link: '/strony-internetowe' },
+        { name: 'Tworzenie sklepów internetowych', link: '/sklepy-internetowe' },
+        { name: 'Projektowanie graficzne', link: '/projektowanie-graficzne' },
+        { name: 'Projekty UX/UI', link: '/projekty-ux-i-ui' },
+        { name: 'Tworzenie aplikacji webowych', link: '/aplikacje-webowe' },
+        { name: 'Obsługa techniczna IT', link: '/obsluga-it' }
     ],
     info: [
-        { name: 'Polityka prywatności', link: '/tworzenie-stron-www' },
-        { name: 'Kontakt', link: '/tworzenie-stron-www' },
-        { name: 'O nas', link: '/tworzenie-stron-www' }
+        { name: 'Polityka prywatności', link: '/polityka-prywatnosci' },
+        { name: 'Kontakt', link: '/kontakt' },
+        { name: 'O nas', link: '/o-nas' }
     ],
     local: [
-        { name: 'Strony internetowe Golub-Dobrzyń', link: '/tworzenie-stron-www' },
-        { name: 'Strony internetowe Toruń', link: '/tworzenie-stron-www' },
-        { name: 'Strony internetowe Rypin', link: '/tworzenie-stron-www' },
-        { name: 'Strony internetowe Brodnica', link: '/tworzenie-stron-www' },
-        { name: 'Strony internetowe Lipno', link: '/tworzenie-stron-www' },
+        { name: 'Strony internetowe Golub-Dobrzyń', link: '/strony-internetowe-golub-dobrzyn' },
+        { name: 'Strony internetowe Toruń', link: '/strony-internetowe-torun' },
+        { name: 'Strony internetowe Brodnica', link: '/strony-internetowe-brodnica' },
+        { name: 'Sklepy internetowe Toruń', link: '/sklepy-internetowe-torun' },
+        { name: 'Sklepy internetowe Brodnica', link: '/sklepy-internetowe-brodnica' },
     ],
     others: {
         facebook: 'https://www.facebook.com/Skylopl-Agencja-Interaktywna-107515137810946',

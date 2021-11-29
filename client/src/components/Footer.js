@@ -74,10 +74,10 @@ const Footer = () => {
             </h6>
             <span className="footer__bottom__socialMedia flex">
                 Skylo.pl w social media:
-                <a className="footer__bottom__link" href={footer.others.facebook}>
+                <a className="footer__bottom__link" href={footer.others.facebook} target="_blank">
                     Facebook
                 </a>
-                <a className="footer__bottom__link" href={footer.others.instagram}>
+                <a className="footer__bottom__link" href={footer.others.instagram} target="_blank">
                     Instagram
                 </a>
             </span>

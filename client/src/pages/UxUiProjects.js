@@ -2,10 +2,8 @@ import React from 'react'
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 import vector from "../static/img/vector-3.png";
-import ecommerceImg from "../static/img/tworzenie-sklepow-internetowych-brodnica.svg";
 import SingleStrength from "../components/SingleStrength";
-import ecommerce from "../data/ecommerce";
-import points from "../static/img/points.svg";
+import points from "../static/img/points-4.svg";
 import SmallPortfolio from "../components/SmallPortfolio";
 import ShortContactForm from "../components/ShortContactForm";
 import ux from "../data/ux";
@@ -67,11 +65,14 @@ const UxUiProjects = () => {
                     <h3 className="offer__heading">
                         {ux.fourthHeader}
                     </h3>
+                    <figure className="ux__imgWrapper d-900">
+                        <img className="btn__img" src={ux.secondImage} alt={ux.fourthHeader} />
+                    </figure>
                     <p className="text">
                         {ux.fourthParagraph}
                     </p>
                 </article>
-                <figure className="ux__imgWrapper">
+                <figure className="ux__imgWrapper d-over-900">
                     <img className="btn__img" src={ux.secondImage} alt={ux.fourthHeader} />
                 </figure>
             </section>
@@ -100,22 +101,19 @@ const UxUiProjects = () => {
                 {ux.sixthParagraph}
             </h3>
             <section className="offer__points">
-                <img className="offer__points__img" src={points} alt="wlasna-strona-internetowa" />
+                <img className="offer__points__img d-over-900" src={points} alt="wlasna-strona-internetowa" />
                 <article className="offer__points__content">
                     <p className="offer__points__item">
-                        <span className="red">1. Analiza Twoich celów i wizji</span> - naszą współpracę zaczynamy od przeanalizowania Twoich celów, a także poznania Twojej koncepcji dotyczącej designu strony. Chcemy stworzyć taki projekt, który jednocześnie będzie podobał się Tobie, klientom, ale także będzie spełniał wszystkie wymagane funkcje, zgodne z Twoimi celami oraz standardami UX/UI.
+                        <span className="red">1. Analiza Twoich oczekiwań i celów</span> - standardowo na samym początku współpracy chcemy dowiedzieć się, czego od nas oczekujesz. Przeanalizujemy Twoje potrzeby oraz to, jakie cele masz związane z projektem. Poruszymy także temat Twojej wizji i wyobrażenia projektu.
                     </p>
                     <p className="offer__points__item">
-                        <span className="red">2. Przedstawienie makiety</span> - po ustaleniu wszystkich szczegółów i podpisaniu umowy, przystępujemy do przygotowania wstępnego projektu Twojej strony www. Makieta przedstawia zazwyczaj projekt strony głównej, zawierający układ treści, elementów graficznych, przyjętą kolorystykę.
+                        <span className="red">2. Makieta UX</span> - po ustaleniu konkretów, przechodzimy do zaprojektowania makiety UX. Polega ona na wizualizacji projektu bez oprawy graficznej, z uwzględnieniem funkcji oraz działania poszczególnych elementów.
                     </p>
                     <p className="offer__points__item">
-                        <span className="red">3. Projekt</span> - jeśli zaakceptujesz wstępną propozycję wyglądu Twojej strony (makiety), przystępujemy do finalizacji projektu. Na tym etapie postępy pokazujemy Ci regularnie, a Ty cały czas masz możliwość reagowania na bieżące zmiany i nowe elementy w projekcie. Nie przystąpimy do programowania do momentu, aż projekt zostanie przez Ciebie zaakceptowany.
+                        <span className="red">3. Projekt</span> - jeśli makieta UX spełnia Twoje oczekiwania, przystępujemy do nakładania elementów graficznych na projekt. Na tym etapie realizacja nabiera barw i charakteru.
                     </p>
                     <p className="offer__points__item">
-                        <span className="red">4. Programowanie</span> - jeśli przygotowany przez nas projekt spełnia Twoje oczekiwania, wówczas rozpoczynamy programowanie strony. Nie martw się, jeśli zmienisz zdanie co do jakiegoś elementu w projekcie, cały czas istnieje możliwość poprawy i zmiany.
-                    </p>
-                    <p className="offer__points__item">
-                        <span className="red">5. Testowanie, uruchomienie domeny</span> - zbliżamy się do finalizacji Twojej wirtualnej wizytówki. Na tym etapie, po ukończeniu prac, przystępujemy do testowania funkcji i sprawdzania poprawności działania strony. Po ukończeniu testów i Twojej akceptacji przenosimy stronę na Twoją docelową domenę. Nie masz domeny? Nie martw się, pomożemy Ci na każdym etapie, włącznie z wykupieniem i uruchomieniem domeny, hostingu czy serwera.
+                        <span className="red">4. Przekazanie projektu do programowania</span> - na ostatnim etapie współpracy przekazujemy projekt Twojemu zespołowi, abyś mógł go wdrożyć i uruchomić. Przekazujemy wszystkie pliki i kompletny widok oraz służymy pomocą przez cały czas trwania Twoich prac wdrożeniowych.
                     </p>
                 </article>
             </section>

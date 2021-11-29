@@ -31,7 +31,7 @@ const AboutUs = () => {
             <h2 className="heading aboutUs__header">
                 Skylo.pl w liczbach
             </h2>
-            <section className="flex">
+            <section className="aboutUs__frames flex">
                 {aboutUs.frames.map((item, index) => {
                     return <section className="aboutUs__frame" key={index}>
                         <span className="aboutUs__frame__number">
