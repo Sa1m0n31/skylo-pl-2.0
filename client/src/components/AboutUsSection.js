@@ -8,10 +8,10 @@ const AboutUsSection = () => {
             Poznaj nas
         </span>
            <h2 className="mainHeader">
-               No właśnie... Kim Ty w ogóle jesteś?
+               Z kim masz do czynienia?
            </h2>
            <p className="text">
-               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+               Nasza misja w Skylo.pl jako agencja interaktywna to nie tylko praca i droga zawodowa, ale także pasja i sposób na życie - tworzymy i programujemy z pasji, a naszym Klientom chcemy dostarczać realizacje na najwyższym poziomie. Nasza agencja to połączenie tego, co w tworzeniu jest najważniejsze - kreatywność, zaangażowanie, wiedza oraz doświadczenie. Chcemy pomóc Ci rozwijać Twój biznes lub markę, mając na uwadze, że Internet to nie tylko przyszłość, ale i teraźniejszość!
            </p>
            <figure className="aboutUs__right d-mobile">
                <img className="btn__img" src={img} alt="agencja-interaktywna-bydgoszcz" />

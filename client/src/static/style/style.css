@@ -52,7 +52,7 @@
 :root {
     --dark: #0F0F0F;
     --darkSecondary: #131313;
-    --red: #C12A21;
+    --red: #c12a21;
     --redHover: #B00910;
     --grey: #818181;
     --greyFooterHeader: #A7A7A7;
@@ -432,6 +432,12 @@ ul {
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+    transition: .1s all;
+}
+
+.offer__item__link:hover {
+    /*opacity: .8;*/
+    background: #A12A21;
 }
 
 .backgroundImg--2 {
@@ -783,13 +789,85 @@ ul {
     background: var(--darkSecondary);
     border: 3px solid var(--red);
     border-radius: 5px;
-    height: 700px;
+    height: 300px;
     margin: 40px auto;
+    flex-direction: column;
+    position: relative;
+}
+
+.companies__main {
+    padding: 10px 5%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.companies__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .4s all;
+}
+
+.companies__slide__img {
+    max-width: 18%;
+    max-height: 125px;
+}
+
+.companies__slide--3 .companies__slide__img {
+    max-width: 28%;
+    max-height: 150px;
+}
+
+.companies__slide--3 {
+    margin-top: 20px;
+}
+
+.companies__slide--3:nth-of-type(2) {
+    margin-top: 40px;
+}
+
+.companies__dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.companies__mobile__img {
+    max-width: 60%;
+    max-height: 100px;
+}
+
+.companies.d-mobile div {
+    height: 100%;
 }
 
 /* Testimonials */
 .testimonials {
-    margin-top: 40px;
+    margin-top: 70px;
+    height: 450px;
+}
+
+.testimonials__two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.testimonials__two:first-of-type {
+    opacity: 1;
 }
 
 .testimonials__item {
@@ -816,6 +894,7 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    max-width: 80%;
 }
 
 .testimonials__logo {
@@ -827,7 +906,7 @@ ul {
     text-align: center;
     color: #fff;
     margin: 60px auto 0;
-    max-width: 500px;
+    max-width: clamp(100px, 80%, 500px);
 }
 
 .testimonials__caption {
@@ -837,6 +916,7 @@ ul {
     transform: translateX(-50%);
     font-weight: 700;
     color: #fff;
+    text-align: center;
 }
 
 .testimonials__bottom {
@@ -947,11 +1027,11 @@ ul {
 }
 
 .footer__list__link {
-    transition: .2s all;
+    transition: .1s all;
 }
 
 .footer__list__link:hover {
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, .5);
 }
 
 .footer__address span {

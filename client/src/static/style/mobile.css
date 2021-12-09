@@ -552,6 +552,40 @@
     .container--ux .websites__imgWrapper {
         width: 80%;
     }
+
+    .companies {
+        height: 200px;
+    }
+
+    .companies__main {
+        top: 14%;
+    }
+
+    .companies__slide__img {
+        max-height: 80px;
+    }
+
+    .companies__dots .testimonials__btn {
+        width: 14px;
+        height: 14px;
+    }
+
+    .companies__slide--3:nth-of-type(2) {
+        margin-top: 30px;
+    }
+
+    .testimonials,
+    .testimonials__item {
+        height: 420px;
+    }
+
+    .testimonials__text, .testimonials__caption {
+        font-size: 14px;
+    }
+
+    .testimonials__bottom {
+        margin-top: 20px;
+    }
 }
 
 @media(max-width: 776px) {
@@ -561,6 +595,18 @@
 
     .d-mobile {
         display: block !important;
+    }
+
+    .testimonials__item {
+        padding: 0 1.5%;
+    }
+
+    .testimonials__text {
+        margin-top: 25px;
+    }
+
+    .testimonials__logo {
+        width: 35%;
     }
 
     .emailResult {
@@ -885,7 +931,7 @@
     }
 
     .menu__back {
-        top: 8px;
+        top: 34px;
         left: 8px;
         font-size: 12px;
     }
@@ -978,6 +1024,26 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .companies__arrow {
+        width: 10px;
+        background: var(--dark);
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+
+    .arrow--prev {
+        left: 20px;
+    }
+
+    .arrow--next {
+        right: 20px;
+        transform: translateY(-50%) rotateY(180deg);
     }
 }
 

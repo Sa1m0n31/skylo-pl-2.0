@@ -1,4 +1,9 @@
 import example from '../static/img/logo-hotic.png'
+import kalchem from '../static/img/Kalchem.png'
+import caloe from '../static/img/Caloe.png'
+import brunchbox from '../static/img/BrunchBox.png'
+import jurkiewicz from '../static/img/Kancelaria-Jurkiewicz.png'
+import hideisland from '../static/img/HideIsland.png'
 
 const testimonials = [
     [
@@ -8,33 +13,33 @@ const testimonials = [
             caption: 'Hotic-Polska'
         },
         {
-            img: example,
+            img: kalchem,
             text: '"Jestem bardzo zadowolony. Strona w 100% spełniła moje oczekiwania. Kontakt idealny, pełne zrozumienie tematu, wysoka kreatywność! Czas i cena wykonania projektu to dodatkowo bardzo duży plus. Z czystym sumieniem polecam."',
-            caption: 'Hotic-Polska'
+            caption: 'Arleta Macikowska, Kalchem'
         }
     ],
     [
         {
-            img: example,
+            img: caloe,
             text: '"Jestem bardzo zadowolony. Strona w 100% spełniła moje oczekiwania. Kontakt idealny, pełne zrozumienie tematu, wysoka kreatywność! Czas i cena wykonania projektu to dodatkowo bardzo duży plus. Z czystym sumieniem polecam."',
-            caption: 'Brunchbox'
+            caption: 'Celina Adamczyk, Caloe'
         },
         {
-            img: example,
+            img: brunchbox,
             text: '"Jestem bardzo zadowolony. Strona w 100% spełniła moje oczekiwania. Kontakt idealny, pełne zrozumienie tematu, wysoka kreatywność! Czas i cena wykonania projektu to dodatkowo bardzo duży plus. Z czystym sumieniem polecam."',
-            caption: 'Happy13'
+            caption: 'Paweł Gwoździej, Brunchbox'
         }
     ],
     [
         {
-            img: example,
+            img: jurkiewicz,
             text: '"Jestem bardzo zadowolony. Strona w 100% spełniła moje oczekiwania. Kontakt idealny, pełne zrozumienie tematu, wysoka kreatywność! Czas i cena wykonania projektu to dodatkowo bardzo duży plus. Z czystym sumieniem polecam."',
-            caption: 'Hideisland'
+            caption: 'Piotr Stefaninam, Kancelaria Jurekiwicz'
         },
         {
-            img: example,
+            img: hideisland,
             text: '"Jestem bardzo zadowolony. Strona w 100% spełniła moje oczekiwania. Kontakt idealny, pełne zrozumienie tematu, wysoka kreatywność! Czas i cena wykonania projektu to dodatkowo bardzo duży plus. Z czystym sumieniem polecam."',
-            caption: 'Procentowo'
+            caption: 'Dominik Adamczyk, Hideisland'
         }
     ]
 ]
