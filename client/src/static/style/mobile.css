@@ -75,6 +75,32 @@
         font-size: 16px;
     }
 
+    .section--shortContactForm .offer__heading {
+        margin-bottom: -50px;
+    }
+
+    .project__header__h {
+        font-size: 28px;
+    }
+
+    .project__header__text {
+        font-size: 14px;
+    }
+
+    .gallery__header {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .gallery__item {
+        width: 49%;
+        margin-bottom: 25px;
+    }
+
+    .button--hero svg {
+        height: 60px;
+    }
+
     .hero {
         padding: 50px 0 30px;
     }
@@ -219,6 +245,10 @@
 @media(max-width: 1200px) {
     .d-1200 {
         display: none;
+    }
+
+    .section--shortContactForm .offer__heading {
+        margin-bottom: -30px;
     }
 
     .offer__item__header {
@@ -586,6 +616,15 @@
     .testimonials__bottom {
         margin-top: 20px;
     }
+
+    .section--gallery .button--hero {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .section--shortContactForm .offer__heading {
+        margin-bottom: 0;
+    }
 }
 
 @media(max-width: 776px) {
@@ -595,6 +634,14 @@
 
     .d-mobile {
         display: block !important;
+    }
+
+    .afterHero__img {
+        margin-bottom: 0;
+    }
+
+    .menu__menu__list__link::after {
+        display: none;
     }
 
     .testimonials__item {
@@ -632,6 +679,7 @@
         padding-bottom: 20px;
     }
 
+    .project,
     .page {
         margin-top: 100px;
     }
@@ -1026,24 +1074,34 @@
         align-items: stretch;
     }
 
-    .companies__arrow {
-        width: 10px;
-        background: var(--dark);
-        border: none;
-        outline: none;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 100;
+    .section--techStack .whiteHeader {
+        margin-bottom: 25px;
     }
 
-    .arrow--prev {
-        left: 20px;
+    .gallery__item {
+        width: 100%;
     }
 
-    .arrow--next {
-        right: 20px;
-        transform: translateY(-50%) rotateY(180deg);
+    .closeModalBtn,
+    .modal__arrow {
+        width: 15px;
+    }
+
+    .project__main__header {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .project__main__text {
+        font-size: 14px;
+    }
+
+    .project__main__img {
+        margin: 20px 0;
+    }
+
+    .stickyHeader {
+        height: 70px;
     }
 }
 

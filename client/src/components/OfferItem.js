@@ -1,7 +1,7 @@
 import React from 'react'
 
 const OfferItem = ({item, key}) => {
-    return <section className="offer__item center" key={key}>
+    return <section className="offer__item center" data-aos="fade-in" key={key}>
         <img className="offer__item__img" src={item.icon} alt={item.header} />
         <h3 className="offer__item__header">
             {item.header}

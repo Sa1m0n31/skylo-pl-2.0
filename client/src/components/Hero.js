@@ -17,6 +17,7 @@ const Hero = () => {
     const [loader, setLoader] = useState(false);
 
     const menu = useRef(null);
+    const stickyHeader = useRef(null);
 
     const isEmail = (email) => {
         const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -44,8 +45,17 @@ const Hero = () => {
     }
 
     useEffect(() => {
-        console.log(loader);
-    }, [loader]);
+        window.addEventListener("scroll", (event) => {
+            if(window.pageYOffset > window.innerHeight) {
+                stickyHeader.current.style.opacity = '1';
+                stickyHeader.current.style.zIndex = '99';
+            }
+            else {
+                stickyHeader.current.style.opacity = '0';
+                stickyHeader.current.style.zIndex = '-1';
+            }
+        });
+    }, []);
 
     const handleSubmit = () => {
         if(isEmail(email)) {
@@ -148,6 +158,18 @@ const Hero = () => {
             </aside>
         </aside>
 
+        <header className="stickyHeader" ref={stickyHeader}>
+            <nav className="stickyHeader__main flex">
+                <a className="stickyHeader__main__logo" href="/">
+
+                </a>
+
+                <button className="button--menu" onClick={() => { openMenu(); }}>
+                    <img className="btn__img" src={menuBtn} alt="menu" />
+                </button>
+            </nav>
+        </header>
+
         <main className="hero__content">
             <header className="hero__header flex">
                 <a className="hero__header__logoWrapper" href="/">
@@ -161,13 +183,13 @@ const Hero = () => {
 
             <main className="hero__main">
                 <h1 className="hero__main__header">
-                    Nie bądź gwiazdą.
+                    Proste rozwiązania,
                 </h1>
                 <h2 className="hero__main__header">
-                    Bądź całą galaktyką.
+                    by osiągnąć sukces
                 </h2>
                 <p className="hero__main__text">
-                    Miliony gwiazd na niebie, ale tylko jedna galaktyka, w której istniejemy. Wyróżnij się spośród wielu. Stworzymy Twój unikalny wizerunek w sieci.
+                    Jesteśmy agencją, która wspiera w osiąganiu celów. Stawiamy na profesjonalizm i wysoką jakość obsługi i dostosowujemy indywidualnie do każdego Klienta.
                 </p>
                 <a className="button button--hero center" href="/kontakt">
                     <svg>
@@ -176,7 +198,7 @@ const Hero = () => {
                     Darmowa wycena
                 </a>
                 <p className="hero__main__thin">
-                    Projektujemy i wdrażamy strony www, sklepy internetowe, aplikacje webowe. Tworzymy także projekty graficzne.<span className="d-desktop"> Wyróżnij się z tłumu i pokaż swoją markę w internecie. Stawiamy na oryginalne oraz indywidualne podejście i tworzymy unikalne projekty.</span>
+                    Tworzymy realizacje skrojone do Twoich wymagań i budżetu. <span>Strony internetowe od 1500 zł, sklepy internetowe już od 2500 zł</span>. Tworzymy dedykowane aplikacje webowe, projekty graficzne i inne realizacje. Sprawdź nasze portfolio lub poproś o darmową wycenę.
                 </p>
             </main>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {
     BrowserRouter as Router,
     Routes as Switch,
@@ -18,8 +18,17 @@ import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import PortfolioWrapper from "./components/PortfolioWrapper";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000
+        });
+    }, []);
+
   return <Router>
           <Switch>
               <Route path="/" element={<Homepage />} />
@@ -33,7 +42,10 @@ function App() {
               <Route path="/o-nas" element={<AboutUs />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
-              <Route path="/portfolio" element={<Portfolio />} />
+              <Route exact path="/portfolio" element={<Portfolio />} />
+
+              <Route path="/portfolio/caloe" element={<PortfolioWrapper page={1} />} />
+              <Route path="/portfolio/czp-premium" element={<PortfolioWrapper page={2} />} />
           </Switch>
       </Router>
 }

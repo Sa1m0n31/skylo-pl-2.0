@@ -70,7 +70,7 @@ const CompaniesSection = () => {
             <h2 className="mainHeader">
                 Te firmy wybrały jakość
             </h2>
-        <main className="companies d-mobile">
+        <main className="companies d-mobile" data-aos="fade-in">
             <button className="companies__arrow arrow--prev" onClick={() => { slider.prev(); }}>
                 <img className="btn__img" src={arrowWhite} alt="poprzedni" />
             </button>
@@ -85,7 +85,7 @@ const CompaniesSection = () => {
                 <img className="btn__img" src={arrowWhite} alt="poprzedni" />
             </button>
         </main>
-            <main className="companies center d-desktop">
+            <main className="companies center d-desktop" data-aos="fade-in">
                 <main className="companies__main">
                     <div className="companies__slide companies__slide--3 flex" ref={slide1}>
                         <img className="companies__slide__img" src={logo9} alt="logo-firmy" />

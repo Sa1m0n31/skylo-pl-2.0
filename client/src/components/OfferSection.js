@@ -8,7 +8,7 @@ const OfferSection = () => {
         <h2 className="mainHeader">
             Poznaj naszą ofertę<span className="d-mobile"><br/></span> - co robimy?
         </h2>
-        <p className="text">
+        <p className="text" data-aos="fade-in">
             Jesteśmy agencją interaktywną. Tworzymy strony www, sklepy internetowe oraz platformy sprzedażowe. Projektujemy grafikę reklamową, projekty UX/UI (aplikacje, systemy, programy), tworzymy aplikacje webowe. Pomagamy w zakresie utrzymania domeny, hostingu oraz serwera. Z nami nie martwisz się o nic - skupiasz się na tym, aby Twoja strona zarabiała, my zadbamy o całą resztę - od aspektów wizualnych po zaplecze techniczne.
         </p>
         <OfferSectionContent />

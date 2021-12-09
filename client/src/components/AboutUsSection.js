@@ -10,18 +10,18 @@ const AboutUsSection = () => {
            <h2 className="mainHeader">
                Z kim masz do czynienia?
            </h2>
-           <p className="text">
+           <p className="text" data-aos="fade-in">
                Nasza misja w Skylo.pl jako agencja interaktywna to nie tylko praca i droga zawodowa, ale także pasja i sposób na życie - tworzymy i programujemy z pasji, a naszym Klientom chcemy dostarczać realizacje na najwyższym poziomie. Nasza agencja to połączenie tego, co w tworzeniu jest najważniejsze - kreatywność, zaangażowanie, wiedza oraz doświadczenie. Chcemy pomóc Ci rozwijać Twój biznes lub markę, mając na uwadze, że Internet to nie tylko przyszłość, ale i teraźniejszość!
            </p>
-           <figure className="aboutUs__right d-mobile">
+           <figure className="aboutUs__right d-mobile" data-aos="fade-in">
                <img className="btn__img" src={img} alt="agencja-interaktywna-bydgoszcz" />
            </figure>
-           <a className="button button--aboutUs center" href="/o-nas">
+           <a className="button button--aboutUs center" href="/o-nas" data-aos="fade-in">
                Dowiedz się więcej
            </a>
        </article>
 
-       <figure className="aboutUs__right d-desktop">
+       <figure className="aboutUs__right d-desktop" data-aos="fade-in">
            <img className="btn__img" src={img} alt="agencja-interaktywna-bydgoszcz" />
        </figure>
     </section>

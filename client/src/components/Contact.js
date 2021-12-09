@@ -85,10 +85,10 @@ const Contact = () => {
             <h2 className="mainHeader">
                 Przekonaliśmy Cię?<span className="d-mobile"><br/></span> Napisz do nas!
             </h2>
-           <main className="contact__main flex">
+           <main className="contact__main flex" data-aos="fade-in">
                <section className="contact__left">
                    <p className="contact__p">
-                       Wypełnij poniższy formularz i zostaw do siebie kontakt - my oddzwonimy, lub odpiszemy w przeciągu maksymalnie 24 godzin. Zaznacz usługę, którą jesteś zainteresowany. Możesz też opisać swoją sprawę lub zadań nam pytanie.
+                       Wypełnij poniższy formularz i zostaw do siebie kontakt - my oddzwonimy, lub odpiszemy w przeciągu maksymalnie 24 godzin. Zaznacz usługę, którą jesteś zainteresowany. Możesz też opisać swoją sprawę lub zadać nam pytanie.
                    </p>
                    <h3 className="contact__header">
                        Najpierw zaznacz, czego potrzebujesz
@@ -116,7 +116,9 @@ const Contact = () => {
         <h3 className="contact__header">
             Wypełnij poniższy formularz - odezwiemy się do Ciebie
         </h3>
-        <form className="contact__form" onSubmit={(e) => { handleSubmit(e); }}>
+        <form className="contact__form"
+              data-aos="fade-in"
+              onSubmit={(e) => { handleSubmit(e); }}>
             <label className="label">
                 <input className="input"
                        name="name"

@@ -22,7 +22,9 @@ const PortfolioSection = () => {
                             {item.subtitle}
                         </h4>
                     </span>
-                    <section className="portfolio__item" key={index}>
+                    <section className="portfolio__item"
+                             data-aos="fade-in"
+                             key={index}>
                         <img className="portfolio__item__img" src={item.img} alt={item.title} />
                         <main className="portfolio__item__inner center d-desktop">
                             <h3 className="portfolio__item__title">
@@ -55,7 +57,7 @@ const PortfolioSection = () => {
                 </>
             })}
         </main>
-        <a className="portfolioBtn center" href="/portfolio">
+        <a className="portfolioBtn center" href="/portfolio" data-aos="fade-in">
             Zobacz nasze portfolio<span className="d-mobile"><br/></span> i przekonaj się sam, co potrafimy
         </a>
     </section>

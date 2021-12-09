@@ -9,7 +9,7 @@ const BlogSection = () => {
         <h2 className="mainHeader">
             Zobacz nasze ostatnie wpisy
         </h2>
-        <main className="blog flex">
+        <main className="blog flex" data-aos="fade-in">
             {blog.map((item, index) => {
                 if(index < 3) {
                     return <a className="blog__item" key={index} href={item.title}>

@@ -50,7 +50,7 @@ const Testimonials = () => {
         <h2 className="mainHeader">
             A tak o nas mówią...
         </h2>
-        <main className="testimonials d-mobile">
+        <main className="testimonials d-mobile" data-aos="fade-in">
             <button className="companies__arrow arrow--prev" onClick={() => { slider.prev(); }}>
                 <img className="btn__img" src={arrowWhite} alt="poprzedni" />
             </button>
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 <img className="btn__img" src={arrowWhite} alt="poprzedni" />
             </button>
         </main>
-        <main className="testimonials flex d-desktop">
+        <main className="testimonials flex d-desktop" data-aos="fade-in">
             {testimonials.map((item, index) => {
                 return <div className="testimonials__two" key={index}>
                     {item.map((item, index) => {
@@ -90,7 +90,7 @@ const Testimonials = () => {
                 </div>
             })}
         </main>
-        <aside className="testimonials__bottom center d-desktop">
+        <aside className="testimonials__bottom center d-desktop" data-aos="fade-in">
             {testimonials.map((item, index) => {
                 return <button className={index === page ? "testimonials__btn testimonials__btn--selected" : "testimonials__btn"}
                                key={index}
