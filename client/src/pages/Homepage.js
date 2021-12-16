@@ -30,7 +30,7 @@ const Homepage = () => {
         <PortfolioSection />
         <CompaniesSection />
         <Testimonials />
-        <BlogSection />
+        {/*<BlogSection />*/}
         <Footer />
     </div>
 }

@@ -7,7 +7,7 @@ import nodejs from '../static/img/node.png'
 import wordpress from '../static/img/wordpress.png'
 import gatsby from '../static/img/gatsby.png'
 import woocommerce from '../static/img/woocommerce.png'
-import skylocms from '../static/img/react.svg'
+import skylocms from '../static/img/skylo-logo-white.png'
 import SingleStrength from "./SingleStrength";
 import ReactSiema from "react-siema";
 import arrowWhite from "../static/img/arrow-white.svg";

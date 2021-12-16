@@ -33,16 +33,16 @@ const PortfolioSection = () => {
                             <h4 className="portfolio__item__subtitle">
                                 {item.subtitle}
                             </h4>
-                            <a className="portfolio__item__link center" href={item.link}>
+                            <a className="portfolio__item__link center" href={`/portfolio${item.link}`}>
                                 O współpracy
                             </a>
                             <aside className="portfolio__item__bottom flex">
-                                <button className="portfolio__item__btn hover">
-                                    <img className="btn__img" src={searchPlus} alt="powieksz" />
-                                </button>
-                                <button className="portfolio__item__btn hover">
+                                {/*<button className="portfolio__item__btn hover">*/}
+                                {/*    <img className="btn__img" src={searchPlus} alt="powieksz" />*/}
+                                {/*</button>*/}
+                                <a className="portfolio__item__btn hover" href={item.website} target="_blank">
                                     <img className="btn__img" src={link} alt="link" />
-                                </button>
+                                </a>
                             </aside>
                         </main>
                     </section>

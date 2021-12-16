@@ -3,6 +3,10 @@ import PageHeader from "./PageHeader";
 import Footer from "./Footer";
 import PortfolioCaloe from "../pages/PortfolioCaloe";
 import PortfolioCZP from "../pages/PortfolioCZP";
+import Portfoliokalchem from "../pages/PortfolioKalchem";
+import PortfolioBrunchbox from "../pages/PortfolioBrunchbox";
+import PortfolioFlightmedia from "../pages/PortfolioFlightmedia";
+import PortfolioDrokam from "../pages/PortfolioDrokam";
 
 const PortfolioWrapper = ({page}) => {
     const [renderSwitch, setRenderSwitch] = useState(null);
@@ -14,6 +18,18 @@ const PortfolioWrapper = ({page}) => {
                 break;
             case 2:
                 setRenderSwitch(<PortfolioCZP />);
+                break;
+            case 3:
+                setRenderSwitch(<Portfoliokalchem />);
+                break;
+            case 4:
+                setRenderSwitch(<PortfolioBrunchbox />);
+                break;
+            case 5:
+                setRenderSwitch(<PortfolioFlightmedia />);
+                break;
+            case 9:
+                setRenderSwitch(<PortfolioDrokam />);
                 break;
             default:
                 window.location = '';

@@ -162,11 +162,11 @@ const PageHeader = ({currentPage}) => {
                         Kontakt
                     </a>
                 </li>
-                <li className={currentPage !== 5 ? "pageHeader__menu__list__item" : "pageHeader__menu__list__item pageHeader__menu__list__item--current"}>
-                    <a className="pageHeader__menu__list__link" href="/blog">
-                        Blog
-                    </a>
-                </li>
+                {/*<li className={currentPage !== 5 ? "pageHeader__menu__list__item" : "pageHeader__menu__list__item pageHeader__menu__list__item--current"}>*/}
+                {/*    <a className="pageHeader__menu__list__link" href="/blog">*/}
+                {/*        Blog*/}
+                {/*    </a>*/}
+                {/*</li>*/}
             </ul>
         </menu>
     </header>

@@ -11,7 +11,7 @@ const Testimonials = () => {
     const startInterval = () => {
         setInterval(() => {
             setPage(prevState => {
-                if(prevState === 2) return 0;
+                if(prevState === 1) return 0;
                 else return prevState+1;
             });
         }, 6000);

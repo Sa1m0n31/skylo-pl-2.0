@@ -46,6 +46,14 @@ function App() {
 
               <Route path="/portfolio/caloe" element={<PortfolioWrapper page={1} />} />
               <Route path="/portfolio/czp-premium" element={<PortfolioWrapper page={2} />} />
+              <Route path="/portfolio/kalchem" element={<PortfolioWrapper page={3} />} />
+              <Route path="/portfolio/brunchbox" element={<PortfolioWrapper page={4} />} />
+              <Route path="/portfolio/flightmedia" element={<PortfolioWrapper page={5} />} />
+              <Route path="/portfolio/liderenergia" element={<PortfolioWrapper page={6} />} />
+              <Route path="/portfolio/hotic-polska" element={<PortfolioWrapper page={7} />} />
+              <Route path="/portfolio/tabularii" element={<PortfolioWrapper page={8} />} />
+              <Route path="/portfolio/drokam" element={<PortfolioWrapper page={9} />} />
+              <Route path="/portfolio/procentowo" element={<PortfolioWrapper page={10} />} />
           </Switch>
       </Router>
 }

@@ -329,7 +329,7 @@ ul {
 
 .backgroundImg--5 {
     right: -5%;
-    top: 7500px;
+    top: 7000px;
     transform: rotate(-30deg);
 }
 
@@ -2050,4 +2050,20 @@ a.menu__contact__link:hover {
     width: var(--siteWidth);
     margin: auto;
     height: 100%;
+}
+
+.marginTop20 {
+    margin-top: 30px;
+}
+
+.project__main .offer__points {
+    height: 190px;
+}
+
+.project__main .offer__points--brunchbox {
+    height: 300px;
+}
+
+.project__main .offer__points--brunchbox .offer__points__content {
+    height: 95%;
 }

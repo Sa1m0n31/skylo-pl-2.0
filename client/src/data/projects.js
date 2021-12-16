@@ -20,12 +20,29 @@ import flightImg4 from '../static/projects/flightmedia/Page4.png'
 import flightImg5 from '../static/projects/flightmedia/Page5.png'
 import flightImg6 from '../static/projects/flightmedia/Page6.png'
 
+import drokamLogo from '../static/img/DROKAM.png'
 import drokamImg1 from '../static/projects/drokam/Page1.png'
 import drokamImg2 from '../static/projects/drokam/Page2.png'
 import drokamImg3 from '../static/projects/drokam/Page3.png'
 import drokamImg4 from '../static/projects/drokam/Page4.png'
 import drokamImg5 from '../static/projects/drokam/Page5.png'
 import drokamImg6 from '../static/projects/drokam/Page6.png'
+
+import kalchemMain from '../static/projects/kalchem/kalchem-glowna.png'
+import kalchem1 from '../static/projects/kalchem/Page1.png'
+import kalchem2 from '../static/projects/kalchem/Page2.png'
+import kalchem3 from '../static/projects/kalchem/Page3.png'
+import kalchem4 from '../static/projects/kalchem/Page4.png'
+import kalchemLogo from '../static/projects/kalchem/kalchem-logo.jpg'
+
+import brunchMain from '../static/projects/brunchbox/Brunch.png'
+import brunchLogo from '../static/img/BrunchBox.png'
+import brunch1 from '../static/projects/brunchbox/Page1.png'
+import brunch2 from '../static/projects/brunchbox/Page2.png'
+import brunch3 from '../static/projects/brunchbox/Page3.png'
+import brunch4 from '../static/projects/brunchbox/Page4.png'
+import brunch5 from '../static/projects/brunchbox/Page5.png'
+import brunch6 from '../static/projects/brunchbox/Page6.png'
 
 const caloe = {
     title: 'Sklep internetowy i branding - Caloe.pl',
@@ -61,11 +78,30 @@ const drokam = {
     title: 'Strona internetowa i projekt wizytówki firmowej dla DROKAM STUDIO',
     subtitle: 'Witryna ukazująca portfolio i prezentująca usługi firmy zajmującej się fotografią i tworzeniem materiałów wideo - DROKAM STUDIO.',
     galleryHeader: 'Screeny gotowego projektu witryny',
-    gallery: [drokamImg1, drokamImg2, drokamImg3, drokamImg3, drokamImg4, drokamImg5, drokamImg6],
+    logo: drokamLogo,
+    gallery: [drokamImg1, drokamImg2, drokamImg3, drokamImg4, drokamImg5, drokamImg6],
     siteButtonLabel: 'drokam-studio.pl',
     siteLink: 'https://drokam-studio.pl'
 }
 
+const kalchem = {
+    title: 'Strona internetowa i współpraca - PHZ Kalchem',
+    subtitle: 'Projekt i wdrożenie strony internetowej prezentującej firmę i usługi dla autoryzowanego dealera maszyn rolniczych CLAAS PHZ Kalchem Sp. z o.o.',
+    galleryHeader: 'Zobacz screeny prezentujące witrynę',
+    logo: kalchemLogo,
+    gallery: [kalchem1, kalchem2, kalchem3, kalchem4],
+    siteButtonLabel: 'kalchem.com.pl',
+    siteLink: 'https://kalchem.com.pl'
+}
 
+const brunchbox = {
+    title: 'Rozbudowana platforma sprzedażowa dla Brunch Box',
+    subtitle: 'Kompleksowa usługa dla cateringu z przekąskami, zawierająca zaprojektowanie szaty graficznej, architektury oraz wdrożenie sklepu internetowego.',
+    galleryHeader: 'Zerknij na screeny',
+    logo: brunchLogo,
+    gallery: [brunch1, brunch2, brunch3, brunch4, brunch5, brunch6],
+    siteButtonLabel: 'brunchbox.pl',
+    siteLink: 'https://brunchbox.pl'
+}
 
-export { caloe, czp, flightmedia, drokam }
+export { caloe, czp, flightmedia, drokam, kalchem, brunchbox }
