@@ -67,7 +67,10 @@ const AboutUs = () => {
                         Zajrzyj do portfolio i sprawdź nasze realizacje.
                     </p>
                     <a className="button button--hero button--aboutUs center" href="/portfolio">
-                        Odwiedź portfolio
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                        </svg>
+                        Odwiedź nasze portfolio
                     </a>
                     <h3 className="offer__heading offer__heading--aboutUsLastHeading">
                         Odwiedź nasze profile w social media
@@ -77,10 +80,16 @@ const AboutUs = () => {
                     </p>
                     <section className="flex aboutUs__buttons">
                         <a className="button button--hero button--aboutUs center" href={footer.others.facebook} target="_blank">
+                            <svg>
+                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                            </svg>
                             <img className="aboutUs__buttons__img" src={facebookIcon} alt="facebook" />
                             Skylo.pl na Facebooku
                         </a>
-                        <a className="button button--hero button--aboutUs center" href={footer.others.instagram} target="_blank">
+                        <a  className="button button--hero button--aboutUs center" href={footer.others.instagram} target="_blank">
+                            <svg>
+                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                            </svg>
                             <img className="aboutUs__buttons__img" src={instagramIcon} alt="instagram" />
                             @skylopl na Instagramie
                         </a>

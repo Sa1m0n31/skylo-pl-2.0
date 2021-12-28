@@ -7,6 +7,10 @@ import Portfoliokalchem from "../pages/PortfolioKalchem";
 import PortfolioBrunchbox from "../pages/PortfolioBrunchbox";
 import PortfolioFlightmedia from "../pages/PortfolioFlightmedia";
 import PortfolioDrokam from "../pages/PortfolioDrokam";
+import PortfolioHideisland from "../pages/PortfolioHideisland";
+import PortfolioTabularii from "../pages/PortfolioTabularii";
+import PortfolioProcentowo from "../pages/PortfolioProcentowo";
+import PortfolioHotic from "../pages/PortfolioHotic";
 
 const PortfolioWrapper = ({page}) => {
     const [renderSwitch, setRenderSwitch] = useState(null);
@@ -28,8 +32,20 @@ const PortfolioWrapper = ({page}) => {
             case 5:
                 setRenderSwitch(<PortfolioFlightmedia />);
                 break;
+            case 7:
+                setRenderSwitch(<PortfolioHotic />);
+                break;
+            case 8:
+                setRenderSwitch(<PortfolioTabularii />);
+                break;
             case 9:
                 setRenderSwitch(<PortfolioDrokam />);
+                break;
+            case 10:
+                setRenderSwitch(<PortfolioProcentowo />);
+                break;
+            case 11:
+                setRenderSwitch(<PortfolioHideisland />);
                 break;
             default:
                 window.location = '';

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const sendForm = (name, phoneNumber, email, category, msg) => {
-    return axios.post('http://localhost:5000/send-form', {
+    return axios.post('https://skylo.pl/send-form', {
         name, phoneNumber, email, category, msg
     });
 }

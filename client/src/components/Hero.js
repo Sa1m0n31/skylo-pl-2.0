@@ -9,7 +9,9 @@ import heroData from '../data/hero'
 import phoneIcon from '../static/img/phone-menu.svg'
 import mailIcon from '../static/img/mail-icon.svg'
 import infoIcon from '../static/img/info-menu.svg'
+import smallLogo from '../static/img/skylo-small.png'
 import axios from "axios";
+import footer from "../data/footer";
 
 const Hero = () => {
     const [email, setEmail] = useState("");
@@ -60,7 +62,7 @@ const Hero = () => {
     const handleSubmit = () => {
         if(isEmail(email)) {
             setLoader(true);
-            axios.post('http://localhost:5000/send-email', {
+            axios.post('https://skylo.pl/send-email', {
                 email
             })
                 .then((res) => {
@@ -161,7 +163,7 @@ const Hero = () => {
         <header className="stickyHeader" ref={stickyHeader}>
             <nav className="stickyHeader__main flex">
                 <a className="stickyHeader__main__logo" href="/">
-
+                    <img className="btn__img" src={smallLogo} alt="strony-internetowe-golub-dobrzyn" />
                 </a>
 
                 <button className="button--menu" onClick={() => { openMenu(); }}>
@@ -189,7 +191,7 @@ const Hero = () => {
                     by osiągnąć sukces
                 </h2>
                 <p className="hero__main__text">
-                    Jesteśmy agencją, która wspiera w osiąganiu celów. Stawiamy na profesjonalizm i wysoką jakość obsługi i dostosowujemy indywidualnie do każdego Klienta.
+                    Jesteśmy agencją, która wspiera w osiąganiu celów. Stawiamy na profesjonalizm oraz wysoką jakość obsługi i dostosowujemy indywidualnie do każdego Klienta.
                 </p>
                 <a className="button button--hero center" href="/kontakt">
                     <svg>
@@ -198,23 +200,23 @@ const Hero = () => {
                     Darmowa wycena
                 </a>
                 <p className="hero__main__thin">
-                    Tworzymy realizacje skrojone do Twoich wymagań i budżetu. <span>Strony internetowe od 1500 zł, sklepy internetowe już od 2500 zł</span>. Tworzymy dedykowane aplikacje webowe, projekty graficzne i inne realizacje. Sprawdź nasze portfolio lub poproś o darmową wycenę.
+                    Tworzymy realizacje skrojone do Twoich wymagań i budżetu. <span>Strony internetowe od 1500 zł, sklepy internetowe już od 2500 zł</span>. <span className="d-desktop">Tworzymy dedykowane aplikacje webowe, projekty graficzne i inne realizacje. Sprawdź nasze portfolio lub poproś o darmową wycenę.</span>
                 </p>
             </main>
 
             <aside className="hero__socialMedia">
-                <a className="hero__socialMedia__link" target="_blank" rel="noreferrer" href="">
+                <a className="hero__socialMedia__link" target="_blank" rel="noreferrer" href={footer.others.facebook}>
                     <img className="btn__img" src={facebookIcon} alt="skylo-facebook" />
                 </a>
-                <a className="hero__socialMedia__link" target="_blank" rel="noreferrer" href="">
+                <a className="hero__socialMedia__link" target="_blank" rel="noreferrer" href={footer.others.instagram}>
                     <img className="btn__img" src={instagramIcon} alt="skylo-instagram" />
                 </a>
             </aside>
 
             <aside className="hero__bottom">
-                <span className="hero__bottom__span">
+                <a className="hero__bottom__span" href="#o-nas">
                     Poznaj nas
-                </span>
+                </a>
             </aside>
         </main>
     </main>

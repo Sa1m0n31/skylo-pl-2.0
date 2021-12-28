@@ -4,9 +4,13 @@ import PageHeader from "../components/PageHeader";
 import painterIcon from '../static/img/painter.svg'
 import OfferSectionContent from "../components/OfferSectionContent";
 import ShortContactForm from "../components/ShortContactForm";
+import vector1 from "../static/img/vector-3.png";
+import vector2 from "../static/img/vector-4.png";
 
 const Offer = () => {
     return <div className="container container--offer">
+        <img className="backgroundImg backgroundImg--3" src={vector1} alt="tlo" />
+        <img className="backgroundImg backgroundImg--4" src={vector2} alt="tlo" />
         <PageHeader currentPage={1} />
         <main className="page">
             <h1 className="heading">
@@ -23,7 +27,7 @@ const Offer = () => {
             </h2>
             <article className="flex offer__firstSection">
                 <p className="text text--offer">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                    Tworzymy realizacje skrojone do Twoich wymagań i budżetu. <span>Strony internetowe od 1500 zł, sklepy internetowe już od 2500 zł</span>. Tworzymy dedykowane aplikacje webowe, projekty graficzne i inne realizacje. Sprawdź nasze portfolio lub poproś o darmową wycenę.
                 </p>
                 <figure className="offer__img">
                     <img className="btn__img" src={painterIcon} alt="agencja-interaktywna-golub-dobrzyn" />

@@ -41,10 +41,10 @@ const portfolio = [
     },
     {
         title: 'Strona internetowa',
-        subtitle: 'tabularii.pl',
+        subtitle: 'tabularii-ksiegowosc.pl',
         img: tabularii,
         link: '/tabularii',
-        website: 'https://tabularii.pl'
+        website: 'https://tabularii-ksiegowosc.pl'
     },
     {
         title: 'Strona internetowa',
@@ -74,13 +74,13 @@ const portfolio = [
         link: '/czp-oremium',
         website: 'https://czp-premium.pl'
     },
-    {
-        title: 'Strona internetowa',
-        subtitle: 'liderenergia.pl',
-        img: liderEnergia,
-        link: '/liderenergia',
-        website: 'https://liderenergia.pl'
-    },
+    // {
+    //     title: 'Strona internetowa',
+    //     subtitle: 'liderenergia.pl',
+    //     img: liderEnergia,
+    //     link: '/liderenergia',
+    //     website: 'https://liderenergia.pl'
+    // },
     {
         title: 'Sklep internetowy',
         subtitle: 'hotic-polska.pl',
@@ -93,25 +93,25 @@ const portfolio = [
 const smallPortfolios = [
     [
         {
-            title: 'Sklep internetowy',
-            subtitle: 'brunchbox.pl',
-            img: brunchbox,
-            link: '/brunchbox',
-            website: 'https://brunchbox.pl'
+            title: 'Strona internetowa',
+            subtitle: 'kalchem.com.pl',
+            img: kalchem,
+            link: '/kalchem',
+            website: 'https://kalchem.com.pl'
         },
         {
-            title: 'Sklep internetowy i branding',
-            subtitle: 'caloe.pl',
-            img: caloe,
-            link: '/caloe',
-            website: 'https://caloe.pl'
+            title: 'Strona internetowa',
+            subtitle: 'tabularii-ksiegowosc.pl',
+            img: tabularii,
+            link: '/tabularii',
+            website: 'https://tabularii-ksiegowosc.pl'
         },
         {
-            title: 'Sklep internetowy',
-            subtitle: 'hideisland.pl',
-            img: hideisland,
-            link: '/hideisland',
-            website: 'https://brunchbox.pl'
+            title: 'Strona internetowa',
+            subtitle: 'drokam-studio.pl',
+            img: drokam,
+            link: '/drokam',
+            website: 'https://drokam-studio.pl'
         }
     ],
     [

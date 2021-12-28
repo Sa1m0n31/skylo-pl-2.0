@@ -16,7 +16,10 @@ const AboutUsSection = () => {
            <figure className="aboutUs__right d-mobile" data-aos="fade-in">
                <img className="btn__img" src={img} alt="agencja-interaktywna-bydgoszcz" />
            </figure>
-           <a className="button button--aboutUs center" href="/o-nas" data-aos="fade-in">
+           <a className="button button--hero center" data-aos="fade-in" href="/o-nas">
+               <svg>
+                   <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+               </svg>
                Dowiedz się więcej
            </a>
        </article>

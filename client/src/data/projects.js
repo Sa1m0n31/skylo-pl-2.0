@@ -44,6 +44,42 @@ import brunch4 from '../static/projects/brunchbox/Page4.png'
 import brunch5 from '../static/projects/brunchbox/Page5.png'
 import brunch6 from '../static/projects/brunchbox/Page6.png'
 
+import hideLogo from '../static/projects/hideisland/hideisland-logo.png'
+import hide1 from '../static/projects/hideisland/Page1.png'
+import hide2 from '../static/projects/hideisland/Page2.png'
+import hide3 from '../static/projects/hideisland/Page3.png'
+import hide4 from '../static/projects/hideisland/Page4.png'
+import hide5 from '../static/projects/hideisland/Page5.png'
+import hide6 from '../static/projects/hideisland/Page6.png'
+import hide7 from '../static/projects/hideisland/Page7.png'
+import hide8 from '../static/projects/hideisland/Page8.png'
+
+import tabulariiLogo from '../static/img/Tabularii.png'
+import tab1 from '../static/projects/tabularii/Page1.png'
+import tab2 from '../static/projects/tabularii/Page2.png'
+import tab3 from '../static/projects/tabularii/Page3.png'
+import tab4 from '../static/projects/tabularii/Page4.png'
+import tab5 from '../static/projects/tabularii/Page5.png'
+import tab6 from '../static/projects/tabularii/Page6.png'
+
+import procLogo from '../static/img/Procentowo.png'
+import proc1 from '../static/projects/procentowo/Page1.png'
+import proc2 from '../static/projects/procentowo/Page2.png'
+import proc3 from '../static/projects/procentowo/Page3.png'
+import proc4 from '../static/projects/procentowo/Page4.png'
+import proc5 from '../static/projects/procentowo/Page5.png'
+import proc6 from '../static/projects/procentowo/Page6.png'
+
+import hoticLogo from '../static/img/logo-hotic.png'
+import hot1 from '../static/projects/hotic/Page1.png'
+import hot2 from '../static/projects/hotic/Page2.png'
+import hot3 from '../static/projects/hotic/Page3.png'
+import hot4 from '../static/projects/hotic/Page4.png'
+import hot5 from '../static/projects/hotic/Page6.png'
+import hot6 from '../static/projects/hotic/Page7.png'
+import hot7 from '../static/projects/hotic/Page9.png'
+import hot8 from '../static/projects/hotic/Page11.jpg'
+
 const caloe = {
     title: 'Sklep internetowy i branding - Caloe.pl',
     subtitle: 'Realizacja sklepu internetowego z produktami aloesowymi i stworzenie brandingu dla marki Caloe.',
@@ -104,4 +140,54 @@ const brunchbox = {
     siteLink: 'https://brunchbox.pl'
 }
 
-export { caloe, czp, flightmedia, drokam, kalchem, brunchbox }
+const liderenergia = {
+    title: 'Strona www oraz projekty graficzne dla Lider Energia',
+    subtitle: 'Strona firmowa wraz z kalkulatorem kosztów dla firmy z branży fotowoltaiki',
+    galleryHeader: 'Screeny gotowego projektu witryny',
+    logo: brunchLogo,
+    gallery: [brunch1, brunch2, brunch3, brunch4, brunch5, brunch6],
+    siteButtonLabel: 'brunchbox.pl',
+    siteLink: 'https://brunchbox.pl'
+}
+
+const hideisland = {
+    title: 'Sklep internetowy dla marki Hideisland',
+    subtitle: 'Stworzyliśmy sklep internetowy w oparciu o nasz autorski CMS dla marki odzieżowej HideIsland.',
+    galleryHeader: 'Jeszcze kilka fotek...',
+    logo: hideLogo,
+    gallery: [hide1, hide2, hide3, hide4, hide5, hide6, hide7, hide8],
+    siteButtonLabel: 'hideisland.pl',
+    siteLink: 'https://hideisland.pl'
+}
+
+const tabularii = {
+    title: 'Strona internetowa i projekt logo dla Biura Rachunkowego Tabularii',
+    subtitle: 'Wizytówkowa strona internetowa oraz projekt logo dla biura rachunkowego Tabularii.',
+    galleryHeader: 'Zobacz zdjęcia realizacji',
+    logo: tabulariiLogo,
+    gallery: [tab1, tab2, tab3, tab4, tab5, tab6],
+    siteButtonLabel: 'tabularii-ksiegowosc.pl',
+    siteLink: 'https://tabularii-ksiegowosc.pl'
+}
+
+const procentowo = {
+    title: 'Sklep internetowy Procentowo',
+    subtitle: 'Sklep online z alkoholami na prezent Procentowo.com, zawierający konfigurator etykiet na butelki różnego rodzaju.',
+    galleryHeader: 'Zobacz zdjęcia realizacji',
+    logo: procLogo,
+    gallery: [proc1, proc2, proc3, proc4, proc5, proc6],
+    siteButtonLabel: 'procentowo.com',
+    siteLink: 'https://procentowo.com'
+}
+
+const hotic = {
+    title: 'Platforma sprzedażowa dla Hotic Polska',
+    subtitle: 'Dla firmy Hotic Polska stworzyliśmy platformę do sprzedaży pistoletu masującego ich marki.',
+    galleryHeader: 'Zobacz zdjęcia realizacji',
+    logo: hoticLogo,
+    gallery: [hot1, hot2, hot3, hot4, hot5, hot6],
+    siteButtonLabel: 'hotic-polska.pl',
+    siteLink: 'https://hotic-polska.pl'
+}
+
+export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, liderenergia, hideisland, tabularii, procentowo, hotic }

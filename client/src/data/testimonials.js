@@ -12,25 +12,25 @@ const testimonials = [
         {
             img: hotic,
             text: '"Jestem bardzo zadowolony. Strona w 100% spełniła moje oczekiwania. Kontakt idealny, pełne zrozumienie tematu, wysoka kreatywność! Czas i cena wykonania projektu to dodatkowo bardzo duży plus. Z czystym sumieniem polecam."',
-            caption: 'Hotic-Polska'
+            caption: 'Krzysztof, Hotic-Polska'
         },
         {
             img: brunchbox,
             text: '"Agencja Skylo zbudowała mi stronę od 0. Każdy mój pomysł został zrealizowany- bez ograniczeń i dodatkowych płatności jak w przypadku budowania strony na szablonach. Chłopaki znają się na robocie. Szybko i profesjonalnie. Świetny kontakt. Polecam serdecznie.',
-            caption: 'Brunchbox'
+            caption: 'Paweł, Brunchbox'
         }
     ],
     [
         {
             img: caloe,
             text: '"Profesjonalna realizacja sklepu internetowego. Kompleksowa obsługa, szybkie odpowiedzi na wiadomości i wprowadzanie dodatkowych elementów. Polecam, lepiej trafić nie można!"',
-            caption: 'Celina Adamczyk, Caloe'
+            caption: 'Celina, Caloe'
         },
         {
             img: drokam,
             text: '"Rewelacyjny kontakt, pełne profesjonalizmu podejście do współpracy, cierpliwość oraz elastyczność w stosunku do klienta. Stworzona strona spełnia wszelkie oczekiwania! 👌\n' +
                 'Polecam"',
-            caption: 'Michał Kamiński, DROKAM'
+            caption: 'Michał, DROKAM'
         }
     ],
     // [

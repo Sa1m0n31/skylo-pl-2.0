@@ -38,13 +38,13 @@ const CompaniesSection = () => {
                 if(prevState === 4) return 0;
                 else return prevState+1;
             });
-        }, 3000);
+        }, 5000);
     }
 
     const startMobileInterval = () => {
         setInterval(() => {
             slider.next();
-        }, 2000);
+        }, 4000);
     }
 
     useEffect(() => {

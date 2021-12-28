@@ -21,6 +21,8 @@ import Portfolio from "./pages/Portfolio";
 import PortfolioWrapper from "./components/PortfolioWrapper";
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PageLocal from "./pages/PageLocal";
 
 function App() {
     useEffect(() => {
@@ -43,6 +45,12 @@ function App() {
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
               <Route exact path="/portfolio" element={<Portfolio />} />
+              <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
+
+              <Route path="/strony-internetowe-golub-dobrzyn" element={<PageLocal city="Golub-Dobrzyń" where="Golubiu-Dobrzyniu" />} />
+              <Route path="/strony-internetowe-brodnica" element={<PageLocal city="Brodnica" where="Brodnicy" />} />
+              <Route path="/sklepy-internetowe-rypin" element={<PageLocal city="Rypin" where="Rypinie" />} />
+              <Route path="/sklepy-internetowe-lipno" element={<PageLocal city="Lipno" where="Lipnie" />} />
 
               <Route path="/portfolio/caloe" element={<PortfolioWrapper page={1} />} />
               <Route path="/portfolio/czp-premium" element={<PortfolioWrapper page={2} />} />
@@ -54,6 +62,7 @@ function App() {
               <Route path="/portfolio/tabularii" element={<PortfolioWrapper page={8} />} />
               <Route path="/portfolio/drokam" element={<PortfolioWrapper page={9} />} />
               <Route path="/portfolio/procentowo" element={<PortfolioWrapper page={10} />} />
+              <Route path="/portfolio/hideisland" element={<PortfolioWrapper page={11} />} />
           </Switch>
       </Router>
 }

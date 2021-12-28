@@ -48,7 +48,7 @@ const ShortContactForm = ({header}) => {
         }
 
         setLoader(true);
-        axios.post('http://localhost:5000/send-form', {
+        axios.post('https://skylo.pl/send-form', {
             name, email, phoneNumber: phone, msg: null, category: null
         })
             .then((res) => {

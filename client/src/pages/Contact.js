@@ -35,7 +35,7 @@ const Contact = () => {
         <ShortContactForm header="Możesz również skorzystać z formularza" />
         <aside className="contact__bottomHeader">
             <h3>
-                Lub, jeśli wolisz, możesz skontaktować się z nami za pomocą <span className="underline">czatu online</span> na stronie!
+                Lub, jeśli wolisz, możesz skontaktować się z nami za pomocą czatu online na stronie!
             </h3>
         </aside>
         <Footer />

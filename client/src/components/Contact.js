@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import image from '../static/img/kontakt.svg'
 import arrowDown from '../static/img/arrow-down.svg'
 import axios from "axios";
@@ -6,7 +6,7 @@ import axios from "axios";
 const Contact = () => {
     const typesOfProjects = ['strona www', 'sklep internetowy', 'aplikacja webowa', 'projekt graficzny', 'projekt UX/UI', 'inny temat'];
 
-    const [typeOfProject, setTypeOfProject] = useState(-1);
+    const [typeOfProject, setTypeOfProject] = useState(0);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -15,6 +15,8 @@ const Contact = () => {
     const [error, setError] = useState("");
     const [result, setResult] = useState(0);
     const [loader, setLoader] = useState(false);
+
+    const modal = useRef(null);
 
     const isEmail = (email) => {
         const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -46,7 +48,7 @@ const Contact = () => {
         }
 
         setLoader(true);
-        axios.post('http://localhost:5000/send-form', {
+        axios.post('https://skylo.pl/send-form', {
             name, email, phoneNumber: phone, msg, category: typesOfProjects[typeOfProject]
         })
             .then((res) => {
@@ -78,8 +80,34 @@ const Contact = () => {
         }
     }, [error]);
 
+    const openCategoriesPopup = () => {
+        modal.current.style.display = 'block';
+        modal.current.style.zIndex = '100';
+        modal.current.style.opacity = '1';
+    }
+
+    const closeCategoriesPopup = () => {
+        modal.current.style.display = 'none';
+        modal.current.style.opacity = '0';
+        setTimeout(() => {
+            modal.current.style.zIndex = '-1';
+        }, 400);
+    }
+
     return <section className="section section--contact">
-            <span className="beforeMainHeader">
+
+        <div className="modal modal--form" ref={modal} onClick={() => { closeCategoriesPopup(); }}>
+            <div className="modal--form__inner">
+                {typesOfProjects.map((item, index) => {
+                    return <label className={typeOfProject === index ? "contact__left__label contact__left__label--selected" : "contact__left__label"} onClick={() => { setTypeOfProject(index); closeCategoriesPopup(); }}>
+                        <button className="contact__left__button center"></button>
+                        {item}
+                    </label>
+                })}
+            </div>
+        </div>
+
+        <span className="beforeMainHeader">
                 Skontaktuj się z nami
             </span>
             <h2 className="mainHeader">
@@ -101,10 +129,10 @@ const Contact = () => {
                            </label>
                        })}
                    </section>
-                   <section className="contact__left__buttons d-mobile">
+                   <section className="contact__left__buttons d-mobile" onClick={() => { openCategoriesPopup(); }}>
                        <label className="contact__left__label contact__left__label--selected">
                            <button className="contact__left__button center"></button>
-                           Strony www
+                           {typesOfProjects[typeOfProject]}
                        </label>
                        <img className="contact__left__label__arrow" src={arrowDown} alt="rozwin" />
                    </section>

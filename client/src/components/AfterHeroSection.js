@@ -4,6 +4,7 @@ import picture from '../static/img/agencja-interaktywna-torun.png'
 
 const AfterHeroSection = () => {
     return <section className="section section--afterHero flex">
+        <span id="o-nas"></span>
         <img className="backgroundImg backgroundImg--1" src={vector} alt="tlo" />
         <article className="afterHero__left">
             <span className="beforeMainHeader">
@@ -21,7 +22,10 @@ const AfterHeroSection = () => {
             <p className="text" data-aos="fade-in">
                 Chcemy, aby każda realizacja była na swój sposób wyjątkowa - nadajemy jej niepowtarzalny charakter oraz staramy się stworzyć unikalny design, dodatkowo chcemy uwzględnić wizję oraz życzenia Klienta. Wzajemnie zrozumienie to klucz do owocnej współpracy.
             </p>
-            <a className="button button--hero center" data-aos="fade-in" href="/oferta">
+            <a className="button button--hero center" href="/oferta">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
                 Zobacz, co potrafimy
             </a>
         </article>

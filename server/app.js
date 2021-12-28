@@ -7,6 +7,16 @@ require('dotenv').config()
 const nodemailer = require("nodemailer");
 const smtpTransport = require('nodemailer-smtp-transport');
 
+app.enable('trust proxy');
+
+app.use (function (req, res, next) {
+    if (req.secure) {
+        next();
+    } else {
+        res.redirect('https://' + req.headers.host + req.url);
+    }
+});
+
 /* Middleware */
 app.use(cors());
 app.use(bodyParser({
@@ -59,6 +69,24 @@ app.get("/blog", (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 app.get("/blog/*", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get("/portfolio/*", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get("/polityka-prywatnosci", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get("/strony-internetowe-golub-dobrzyn", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get("/strony-internetowe-brodnica", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get("/sklepy-internetowe-rypin", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get("/sklepy-internetowe-lipno", (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 

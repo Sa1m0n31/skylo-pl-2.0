@@ -1,6 +1,6 @@
 @media(min-width: 2000px) {
     :root {
-        --siteWidth: clamp(200px, 90vw, 1800px);
+        --siteWidth: clamp(200px, 90vw, 1600px);
     }
 
     .menu__header {
@@ -628,6 +628,10 @@
 }
 
 @media(max-width: 776px) {
+    :root {
+        --siteWidth: clamp(200px, 90vw, 90vw);
+    }
+
     .d-desktop {
         display: none !important;
     }
@@ -675,8 +679,8 @@
     }
 
     .pageHeader {
-        padding-top: 30px;
-        padding-bottom: 20px;
+        width: 100%;
+        padding: 30px 20px 20px;
     }
 
     .project,
@@ -811,7 +815,7 @@
         max-width: 100%;
         margin: 20px auto;
         font-size: 16px;
-        height: 50px;
+        height: 60px;
     }
 
     .whiteHeader {
@@ -980,7 +984,7 @@
 
     .menu__back {
         top: 34px;
-        left: 8px;
+        left: 4%;
         font-size: 12px;
     }
 
@@ -1061,7 +1065,7 @@
         margin-top: 25px;
         margin-bottom: 5px;
         font-size: 14px;
-        height: 40px;
+        height: 60px;
     }
 
     .aboutUs__buttons__img {

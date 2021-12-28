@@ -14,10 +14,9 @@ const footer = {
     ],
     local: [
         { name: 'Strony internetowe Golub-Dobrzyń', link: '/strony-internetowe-golub-dobrzyn' },
-        { name: 'Strony internetowe Toruń', link: '/strony-internetowe-torun' },
         { name: 'Strony internetowe Brodnica', link: '/strony-internetowe-brodnica' },
-        { name: 'Sklepy internetowe Toruń', link: '/sklepy-internetowe-torun' },
-        { name: 'Sklepy internetowe Brodnica', link: '/sklepy-internetowe-brodnica' },
+        { name: 'Sklepy internetowe Rypin', link: '/sklepy-internetowe-rypin' },
+        { name: 'Sklepy internetowe Lipno', link: '/sklepy-internetowe-lipno' }
     ],
     others: {
         facebook: 'https://www.facebook.com/Skylopl-Agencja-Interaktywna-107515137810946',

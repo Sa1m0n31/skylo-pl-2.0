@@ -14,22 +14,13 @@ const Testimonials = () => {
                 if(prevState === 1) return 0;
                 else return prevState+1;
             });
-        }, 6000);
-    }
-
-    const startMobileInterval = () => {
-        if(slider) {
-            setInterval(() => {
-                slider.next();
-            }, 6000);
-        }
+        }, 10000);
     }
 
     useEffect(() => {
         setAllTestimonials(Array.from(document.querySelectorAll('.testimonials__two')));
 
         if(window.innerWidth > 768) startInterval();
-        // else startMobileInterval();
     }, []);
 
     useEffect(() => {
