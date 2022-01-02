@@ -2,30 +2,6 @@
     :root {
         --siteWidth: clamp(200px, 90vw, 1600px);
     }
-
-    .menu__header {
-        font-size: 64px;
-    }
-
-    .menu__menu__list__link {
-        font-size: 42px;
-    }
-
-    .menu__main {
-        margin-bottom: 5vh;
-    }
-
-    .menu__contact__link {
-        font-size: 26px;
-    }
-
-    .menu__form__header {
-        font-size: 21px;
-    }
-
-    .input--menu, .menu__form__btn {
-        height: 40px;
-    }
 }
 
 @media(min-width: 1800px) {
@@ -647,11 +623,17 @@
     }
 
     .article .page__title {
-        font-size: 24px;
+        font-size: 19px;
     }
 
     .article p {
         font-size: 14px;
+    }
+
+    .article__content {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
     }
 
     .afterHero__img {

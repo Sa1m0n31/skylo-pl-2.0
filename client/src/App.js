@@ -66,8 +66,9 @@ function App() {
               <Route path="/portfolio/hideisland" element={<PortfolioWrapper page={11} />} />
               <Route path="/portfolio/bednarscy" element={<PortfolioWrapper page={12} />} />
               <Route path="/portfolio/benmar-pompy" element={<PortfolioWrapper page={13} />} />
+              <Route path="/portfolio/benmar" element={<PortfolioWrapper page={14} />} />
 
-              <Route path="/jak-projektowac-strony-tworzenie-prototypow-makiet-wizualizacji-cz-1" element={<BlogPost article={1} />} />
+              <Route path="/blog/jak-projektowac-strony-tworzenie-prototypow-makiet-wizualizacji-cz-1" element={<BlogPost article={1} />} />
           </Switch>
       </Router>
 }

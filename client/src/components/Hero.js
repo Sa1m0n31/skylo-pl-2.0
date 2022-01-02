@@ -96,7 +96,7 @@ const Hero = () => {
             background1Ref.current.style.transition = '10s transform linear, 1s opacity linear';
             background2Ref.current.style.transition = '1s transform linear, 1s opacity linear';
 
-            background1Ref.current.style.transform = 'scale(1.3)';
+            background1Ref.current.style.transform = 'scale(1.2)';
             background2Ref.current.style.transform = 'scale(1)';
             setTimeout(() => {
                 background1Ref.current.style.opacity = '0';
@@ -108,7 +108,7 @@ const Hero = () => {
             background1Ref.current.style.transition = '1s transform linear, 1s opacity linear';
 
             background1Ref.current.style.transform = 'scale(1)';
-            background2Ref.current.style.transform = 'scale(1.3)';
+            background2Ref.current.style.transform = 'scale(1.2)';
             setTimeout(() => {
                 background1Ref.current.style.opacity = '1';
                 background2Ref.current.style.opacity = '0';

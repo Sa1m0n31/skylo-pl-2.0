@@ -11,14 +11,15 @@ import liderEnergia from '../static/img/LiderEnergia-mockup.jpg'
 import flightmedia from '../static/img/FlightMedia-mockup.png'
 import bednarscy from "../static/projects/bednarscy/bednarscy-mockup.png";
 import benmarpompy from '../static/projects/benmarpompy/benmarpompy-mockup.png'
+import benmar from '../static/projects/benmar/benmar.png'
 
 const portfolio = [
     {
-        title: 'Sklep internetowy',
-        subtitle: 'brunchbox.pl',
-        img: brunchbox,
-        link: '/brunchbox',
-        website: 'https://brunchbox.pl'
+        title: 'Strona i sklep internetowy',
+        subtitle: 'witrazebednarscy.pl',
+        img: bednarscy,
+        link: '/bednarscy',
+        website: 'https://witrazebednarscy.pl'
     },
     {
         title: 'Sklep internetowy i branding',
@@ -28,6 +29,13 @@ const portfolio = [
         website: 'https://caloe.pl'
     },
     {
+        title: 'Strona internetowa',
+        subtitle: 'benmarpompy.pl',
+        img: benmarpompy,
+        link: '/benmar-pompy',
+        website: 'https://benmarpompy.pl'
+    },
+    {
         title: 'Sklep internetowy',
         subtitle: 'hideisland.pl',
         img: hideisland,
@@ -35,11 +43,11 @@ const portfolio = [
         website: 'https://hideisland.pl'
     },
     {
-        title: 'Strona internetowa',
-        subtitle: 'kalchem.com.pl',
-        img: kalchem,
-        link: '/kalchem',
-        website: 'https://kalchem.com.pl'
+        title: 'Sklep internetowy',
+        subtitle: 'brunchbox.pl',
+        img: brunchbox,
+        link: '/brunchbox',
+        website: 'https://brunchbox.pl'
     },
     {
         title: 'Strona internetowa',
@@ -49,18 +57,18 @@ const portfolio = [
         website: 'https://tabularii-ksiegowosc.pl'
     },
     {
-        title: 'Strona i sklep internetowy',
-        subtitle: 'witrazebednarscy.pl',
-        img: bednarscy,
-        link: '/bednarscy',
-        website: 'https://witrazebednarscy.pl'
-    },
-    {
         title: 'Strona internetowa',
         subtitle: 'drokam-studio.pl',
         img: drokam,
         link: '/drokam',
         website: 'https://drokam-studio.pl'
+    },
+    {
+        title: 'Strona internetowa',
+        subtitle: 'benmar.eu',
+        img: benmar,
+        link: '/benmar',
+        website: 'https://benmar.eu'
     },
     {
         title: 'Strona internetowa',
@@ -84,26 +92,26 @@ const portfolio = [
         website: 'https://czp-premium.pl'
     },
     {
-      title: 'Strona internetowa',
-      subtitle: 'benmarpompy.pl',
-      img: benmarpompy,
-      link: '/benmar-pompy',
-      website: 'https://benmarpompy.pl'
+        title: 'Strona internetowa',
+        subtitle: 'liderenergia.pl',
+        img: liderEnergia,
+        link: '/liderenergia',
+        website: 'https://liderenergia.pl'
     },
-    // {
-    //     title: 'Strona internetowa',
-    //     subtitle: 'liderenergia.pl',
-    //     img: liderEnergia,
-    //     link: '/liderenergia',
-    //     website: 'https://liderenergia.pl'
-    // },
+    {
+        title: 'Strona internetowa',
+        subtitle: 'kalchem.com.pl',
+        img: kalchem,
+        link: '/kalchem',
+        website: 'https://kalchem.com.pl'
+    },
     {
         title: 'Sklep internetowy',
         subtitle: 'hotic-polska.pl',
         img: hotic,
         link: '/hotic-polska',
         website: 'https://hotic-polska.pl'
-    },
+    }
 ]
 
 const smallPortfolios = [

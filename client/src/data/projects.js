@@ -77,8 +77,6 @@ import hot3 from '../static/projects/hotic/Page3.png'
 import hot4 from '../static/projects/hotic/Page4.png'
 import hot5 from '../static/projects/hotic/Page6.png'
 import hot6 from '../static/projects/hotic/Page7.png'
-import hot7 from '../static/projects/hotic/Page9.png'
-import hot8 from '../static/projects/hotic/Page11.jpg'
 
 import bednarscyLogo from '../static/img/Bednarscy-Witraze.png'
 import bed1 from '../static/projects/bednarscy/Page1-bed.png'
@@ -101,6 +99,22 @@ import pompy5 from '../static/projects/benmarpompy/Page5.png'
 import pompy6 from '../static/projects/benmarpompy/Page6.png'
 import pompy7 from '../static/projects/benmarpompy/Page7.png'
 import pompy8 from '../static/projects/benmarpompy/Page8.png'
+
+import liderLogo from '../static/img/Lider-Energia.png'
+import lider1 from '../static/projects/liderenergia/Page1.png'
+import lider2 from '../static/projects/liderenergia/Page2.png'
+import lider3 from '../static/projects/liderenergia/Page3.png'
+import lider4 from '../static/projects/liderenergia/Page4.png'
+import lider5 from '../static/projects/liderenergia/Page5.png'
+import lider6 from '../static/projects/liderenergia/Page6.png'
+
+import benmarLogo from '../static/projects/benmar/benmar-logo.png'
+import ben1 from '../static/projects/benmar/Page1 (1).png'
+import ben2 from '../static/projects/benmar/Page2 (1).png'
+import ben3 from '../static/projects/benmar/Page4 (1).png'
+import ben4 from '../static/projects/benmar/Page5 (1).png'
+import ben5 from '../static/projects/benmar/Page6 (1).png'
+import ben6 from '../static/projects/benmar/Page7.png'
 
 const caloe = {
     title: 'Sklep internetowy i branding - Caloe.pl',
@@ -162,14 +176,14 @@ const brunchbox = {
     siteLink: 'https://brunchbox.pl'
 }
 
-const liderenergia = {
+const lider = {
     title: 'Strona www oraz projekty graficzne dla Lider Energia',
     subtitle: 'Strona firmowa wraz z kalkulatorem kosztów dla firmy z branży fotowoltaiki',
     galleryHeader: 'Screeny gotowego projektu witryny',
-    logo: brunchLogo,
-    gallery: [brunch1, brunch2, brunch3, brunch4, brunch5, brunch6],
-    siteButtonLabel: 'brunchbox.pl',
-    siteLink: 'https://brunchbox.pl'
+    logo: liderLogo,
+    gallery: [lider1, lider2, lider3, lider4, lider5, lider6],
+    siteButtonLabel: 'liderenergia.pl',
+    siteLink: 'https://liderenergia.pl'
 }
 
 const hideisland = {
@@ -232,5 +246,15 @@ const pompy = {
     siteLink: 'https://benmarpompy.pl'
 }
 
-export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, liderenergia,
-    hideisland, tabularii, procentowo, hotic, bednarscy, pompy }
+const benmar = {
+    title: 'Strona internetowa firmy Benmar',
+    subtitle: 'Witryna internetowa przedstawiająca ofertę firmy Benmar',
+    galleryHeader: 'Rzut oka na zdjęcia projektu',
+    logo: benmarLogo,
+    gallery: [ben1, ben2, ben3, ben4, ben5, ben6],
+    siteButtonLabel: 'benmar.eu',
+    siteLink: 'https://benmar.eu'
+}
+
+export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, lider,
+    hideisland, tabularii, procentowo, hotic, bednarscy, pompy, benmar }

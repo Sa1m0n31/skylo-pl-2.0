@@ -3,6 +3,7 @@ import ProjectHeader from "../components/ProjectHeader";
 import { drokam } from "../data/projects";
 import drokamMainImg from '../static/projects/drokam/DROKAM.png'
 import ProjectGallery from "../components/ProjectGallery";
+import drokamWizytowki from '../static/projects/drokam/drokam-wizytowki.png'
 
 const PortfolioDrokam = () => {
     return <main className="project">
@@ -23,6 +24,7 @@ const PortfolioDrokam = () => {
             <p className="project__main__text">
                 Po stworzeniu dla firmy DROKAM strony internetowej, podjęliśmy się zadania zaprojektowania wizytówki. Dostosowaliśmy design do przyjętego na stronie standardu stylistycznego i przygotowaliśmy gotowy do druku projekt.
             </p>
+            <img className="project__main__img" src={drokamWizytowki} alt="strona-internetowa-drokam-premium" />
         </main>
         <ProjectGallery gallery={drokam.gallery}
                         siteLink={drokam.siteLink}

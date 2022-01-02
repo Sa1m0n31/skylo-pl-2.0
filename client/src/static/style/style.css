@@ -2193,7 +2193,8 @@ a.menu__contact__link:hover {
 }
 
 .article .page__title {
-    font-size: 42px;
+    font-size: 36px;
+    color: var(--red);
 }
 
 .article__img {
@@ -2213,4 +2214,19 @@ a.menu__contact__link:hover {
 
 .m-left {
     margin-left: 5%;
+}
+
+.article__mainImg {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.article__content {
+    background: #131313;
+    border-radius: 5px;
+    padding: 30px;
+    width: 90%;
+    margin: -40px auto 0;
+    z-index: 2;
+    position: relative;
 }
