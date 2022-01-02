@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import portfolio, {smallPortfolios} from "../data/portfolio";
+import {smallPortfolios} from "../data/portfolio";
 import searchPlus from "../static/img/search-plus.svg";
 import link from "../static/img/link.svg";
 import closeIcon from "../static/img/close.svg";

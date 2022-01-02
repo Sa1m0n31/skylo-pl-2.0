@@ -12,6 +12,8 @@ import infoIcon from '../static/img/info-menu.svg'
 import smallLogo from '../static/img/skylo-small.png'
 import axios from "axios";
 import footer from "../data/footer";
+import background1 from '../static/img/skylopl-tlo.jpg'
+import background2 from '../static/img/landing-2.png'
 
 const Hero = () => {
     const [email, setEmail] = useState("");
@@ -20,6 +22,8 @@ const Hero = () => {
 
     const menu = useRef(null);
     const stickyHeader = useRef(null);
+    const background1Ref = useRef(null);
+    const background2Ref = useRef(null);
 
     const isEmail = (email) => {
         const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -87,7 +91,41 @@ const Hero = () => {
         }
     }, [emailResult]);
 
+    const backgroundAnimation = () => {
+        if(Math.round(window.getComputedStyle(background1Ref.current).getPropertyValue('opacity')) === 1) {
+            background1Ref.current.style.transition = '10s transform linear, 1s opacity linear';
+            background2Ref.current.style.transition = '1s transform linear, 1s opacity linear';
+
+            background1Ref.current.style.transform = 'scale(1.3)';
+            background2Ref.current.style.transform = 'scale(1)';
+            setTimeout(() => {
+                background1Ref.current.style.opacity = '0';
+                background2Ref.current.style.opacity = '1';
+            }, 9000);
+        }
+        else {
+            background2Ref.current.style.transition = '10s transform linear, 1s opacity linear';
+            background1Ref.current.style.transition = '1s transform linear, 1s opacity linear';
+
+            background1Ref.current.style.transform = 'scale(1)';
+            background2Ref.current.style.transform = 'scale(1.3)';
+            setTimeout(() => {
+                background1Ref.current.style.opacity = '1';
+                background2Ref.current.style.opacity = '0';
+            }, 9000);
+        }
+    }
+
+    useEffect(() => {
+        backgroundAnimation();
+        setInterval(() => {
+            backgroundAnimation();
+        }, 10000);
+    }, []);
+
     return <main className="hero">
+        <img className="hero__background hero__background--1" ref={background1Ref} src={background1} alt="agencja-interaktywna-golub-dobrzyn" />
+        <img className="hero__background hero__background--2" ref={background2Ref} src={background2} alt="agencja-interaktywna-brodnica" />
         <aside className="menu center hideScrollbar" ref={menu}>
             <button className="menu__back flex" onClick={() => { closeMenu(); }}>
                 <img className="menu__back__img" src={arrowLeft} alt="wroc" />

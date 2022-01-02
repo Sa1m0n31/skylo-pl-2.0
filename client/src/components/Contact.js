@@ -6,7 +6,6 @@ import axios from "axios";
 const Contact = () => {
     const typesOfProjects = ['strona www', 'sklep internetowy', 'aplikacja webowa', 'projekt graficzny', 'projekt UX/UI', 'inny temat'];
 
-    const [typeOfProject, setTypeOfProject] = useState(0);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -15,6 +14,8 @@ const Contact = () => {
     const [error, setError] = useState("");
     const [result, setResult] = useState(0);
     const [loader, setLoader] = useState(false);
+
+    const [allProjects, setAllProjects] = useState([true, false, false, false, false, false]);
 
     const modal = useRef(null);
 
@@ -48,8 +49,13 @@ const Contact = () => {
         }
 
         setLoader(true);
+        const categories = allProjects.map((item, index) => {
+            if(item) return typesOfProjects[index];
+            else return '';
+        }).toString();
+
         axios.post('https://skylo.pl/send-form', {
-            name, email, phoneNumber: phone, msg, category: typesOfProjects[typeOfProject]
+            name, email, phoneNumber: phone, msg, category: categories
         })
             .then((res) => {
                 setLoader(false);
@@ -94,12 +100,37 @@ const Contact = () => {
         }, 400);
     }
 
+    const toggleProject = (i, mobile = false) => {
+       if(mobile) {
+           setAllProjects(allProjects.map((item, index) => {
+               return index === i;
+           }));
+       }
+       else {
+           setAllProjects(allProjects.map((item, index) => {
+               if(index === i) return !item;
+               else return item;
+           }));
+       }
+    }
+
+    const getCurrentProject = () => {
+       if(allProjects?.length) {
+           const index = allProjects.findIndex((item) => {
+               return item;
+           });
+           if(index !== -1) return typesOfProjects[index];
+           else return typesOfProjects[0];
+       }
+       else return '';
+    }
+
     return <section className="section section--contact">
 
         <div className="modal modal--form" ref={modal} onClick={() => { closeCategoriesPopup(); }}>
             <div className="modal--form__inner">
                 {typesOfProjects.map((item, index) => {
-                    return <label className={typeOfProject === index ? "contact__left__label contact__left__label--selected" : "contact__left__label"} onClick={() => { setTypeOfProject(index); closeCategoriesPopup(); }}>
+                    return <label className={allProjects[index] ? "contact__left__label contact__left__label--selected" : "contact__left__label"} onClick={() => { toggleProject(index, true); closeCategoriesPopup(); }}>
                         <button className="contact__left__button center"></button>
                         {item}
                     </label>
@@ -123,8 +154,8 @@ const Contact = () => {
                    </h3>
                    <section className="contact__left__buttons d-desktop">
                        {typesOfProjects.map((item, index) => {
-                           return <label className={index === typeOfProject ? "contact__left__label contact__left__label--selected" : "contact__left__label"} key={index}>
-                               <button className="contact__left__button center" onClick={() => { setTypeOfProject(index); }}></button>
+                           return <label className={allProjects[index] ? "contact__left__label contact__left__label--selected" : "contact__left__label"} key={index}>
+                               <button className="contact__left__button center" onClick={() => { toggleProject(index); }}></button>
                                {item}
                            </label>
                        })}
@@ -132,7 +163,7 @@ const Contact = () => {
                    <section className="contact__left__buttons d-mobile" onClick={() => { openCategoriesPopup(); }}>
                        <label className="contact__left__label contact__left__label--selected">
                            <button className="contact__left__button center"></button>
-                           {typesOfProjects[typeOfProject]}
+                           {getCurrentProject()}
                        </label>
                        <img className="contact__left__label__arrow" src={arrowDown} alt="rozwin" />
                    </section>

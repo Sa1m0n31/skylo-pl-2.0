@@ -28,6 +28,12 @@
     }
 }
 
+@media(min-width: 1800px) {
+    .menu__menu__list__item:first-of-type {
+        margin-top: -305px;
+    }
+}
+
 @media(max-width: 1800px) {
     .menu__back {
         top: 20px;
@@ -638,6 +644,14 @@
 
     .d-mobile {
         display: block !important;
+    }
+
+    .article .page__title {
+        font-size: 24px;
+    }
+
+    .article p {
+        font-size: 14px;
     }
 
     .afterHero__img {

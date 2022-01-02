@@ -11,6 +11,8 @@ import PortfolioHideisland from "../pages/PortfolioHideisland";
 import PortfolioTabularii from "../pages/PortfolioTabularii";
 import PortfolioProcentowo from "../pages/PortfolioProcentowo";
 import PortfolioHotic from "../pages/PortfolioHotic";
+import PortfolioBednarscy from "../pages/PortfolioBednarscy";
+import PortfolioBenmarpompy from "../pages/PortfolioBenmarpompy";
 
 const PortfolioWrapper = ({page}) => {
     const [renderSwitch, setRenderSwitch] = useState(null);
@@ -46,6 +48,12 @@ const PortfolioWrapper = ({page}) => {
                 break;
             case 11:
                 setRenderSwitch(<PortfolioHideisland />);
+                break;
+            case 12:
+                setRenderSwitch(<PortfolioBednarscy />);
+                break;
+            case 13:
+                setRenderSwitch(<PortfolioBenmarpompy />);
                 break;
             default:
                 window.location = '';

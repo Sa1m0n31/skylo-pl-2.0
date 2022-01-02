@@ -9,6 +9,8 @@ import drokam from '../static/img/Drokam-mockup.png'
 import procentowo from '../static/img/Procentowo-mockup.png'
 import liderEnergia from '../static/img/LiderEnergia-mockup.jpg'
 import flightmedia from '../static/img/FlightMedia-mockup.png'
+import bednarscy from "../static/projects/bednarscy/bednarscy-mockup.png";
+import benmarpompy from '../static/projects/benmarpompy/benmarpompy-mockup.png'
 
 const portfolio = [
     {
@@ -47,6 +49,13 @@ const portfolio = [
         website: 'https://tabularii-ksiegowosc.pl'
     },
     {
+        title: 'Strona i sklep internetowy',
+        subtitle: 'witrazebednarscy.pl',
+        img: bednarscy,
+        link: '/bednarscy',
+        website: 'https://witrazebednarscy.pl'
+    },
+    {
         title: 'Strona internetowa',
         subtitle: 'drokam-studio.pl',
         img: drokam,
@@ -73,6 +82,13 @@ const portfolio = [
         img: czp,
         link: '/czp-oremium',
         website: 'https://czp-premium.pl'
+    },
+    {
+      title: 'Strona internetowa',
+      subtitle: 'benmarpompy.pl',
+      img: benmarpompy,
+      link: '/benmar-pompy',
+      website: 'https://benmarpompy.pl'
     },
     // {
     //     title: 'Strona internetowa',
@@ -123,11 +139,11 @@ const smallPortfolios = [
             website: 'https://brunchbox.pl'
         },
         {
-            title: 'Sklep internetowy i branding',
-            subtitle: 'caloe.pl',
-            img: caloe,
-            link: '/caloe',
-            website: 'https://caloe.pl'
+            title: 'Strona i sklep internetowy',
+            subtitle: 'witrazebednarscy.pl',
+            img: bednarscy,
+            link: '/bednarscy',
+            website: 'https://witrazebednarscy.pl'
         },
         {
             title: 'Sklep internetowy',
@@ -153,11 +169,11 @@ const smallPortfolios = [
             website: 'https://caloe.pl'
         },
         {
-            title: 'Sklep internetowy',
-            subtitle: 'hideisland.pl',
-            img: hideisland,
-            link: '/hideisland',
-            website: 'https://brunchbox.pl'
+            title: 'Strona i sklep internetowy',
+            subtitle: 'witrazebednarscy.pl',
+            img: bednarscy,
+            link: '/bednarscy',
+            website: 'https://witrazebednarscy.pl'
         }
     ]
 ]

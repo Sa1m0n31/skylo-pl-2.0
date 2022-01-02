@@ -23,6 +23,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import PageLocal from "./pages/PageLocal";
+import BlogPost from "./pages/BlogPost";
 
 function App() {
     useEffect(() => {
@@ -63,6 +64,10 @@ function App() {
               <Route path="/portfolio/drokam" element={<PortfolioWrapper page={9} />} />
               <Route path="/portfolio/procentowo" element={<PortfolioWrapper page={10} />} />
               <Route path="/portfolio/hideisland" element={<PortfolioWrapper page={11} />} />
+              <Route path="/portfolio/bednarscy" element={<PortfolioWrapper page={12} />} />
+              <Route path="/portfolio/benmar-pompy" element={<PortfolioWrapper page={13} />} />
+
+              <Route path="/jak-projektowac-strony-tworzenie-prototypow-makiet-wizualizacji-cz-1" element={<BlogPost article={1} />} />
           </Switch>
       </Router>
 }

@@ -113,7 +113,7 @@ const Portfolio = () => {
                 Portfolio
             </h1>
             <p className="text">
-                Poniżej znajdziesz wszystkie projekty, które do tej pory zrealizowaliśmy.
+                Sprawdź nasze ostatnie realizacje.
             </p>
             {/*<nav className="portfolio__options flex">*/}
             {/*    <span>*/}
@@ -155,7 +155,7 @@ const Portfolio = () => {
                                     <button className="portfolio__item__btn hover" onClick={() => { openModal(index); }}>
                                         <img className="btn__img" src={searchPlus} alt="powieksz" />
                                     </button>
-                                    <a className="portfolio__item__btn hover" href={`/portfolio${item.website}`} target="_blank">
+                                    <a className="portfolio__item__btn hover" href={item.website} target="_blank">
                                         <img className="btn__img" src={link} alt="link" />
                                     </a>
                                 </aside>

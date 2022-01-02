@@ -80,6 +80,28 @@ import hot6 from '../static/projects/hotic/Page7.png'
 import hot7 from '../static/projects/hotic/Page9.png'
 import hot8 from '../static/projects/hotic/Page11.jpg'
 
+import bednarscyLogo from '../static/img/Bednarscy-Witraze.png'
+import bed1 from '../static/projects/bednarscy/Page1-bed.png'
+import bed2 from '../static/projects/bednarscy/Page2-bed.png'
+import bed3 from '../static/projects/bednarscy/Page3-bed.png'
+import bed4 from '../static/projects/bednarscy/Page4-bed.png'
+import bed5 from '../static/projects/bednarscy/Page5-bed.png'
+import bed6 from '../static/projects/bednarscy/Page6-bed.png'
+import bed7 from '../static/projects/bednarscy/Page7-bed.png'
+import bed8 from '../static/projects/bednarscy/Page8-bed.png'
+import bed9 from '../static/projects/bednarscy/Page9-bed.png'
+import bed10 from '../static/projects/bednarscy/Page10-bed.png'
+
+import benmarpompyLogo from '../static/projects/benmarpompy/benmarpompy-logo.png'
+import pompy1 from '../static/projects/benmarpompy/Page1.png'
+import pompy2 from '../static/projects/benmarpompy/Page2.png'
+import pompy3 from '../static/projects/benmarpompy/Page3.png'
+import pompy4 from '../static/projects/benmarpompy/Page4.png'
+import pompy5 from '../static/projects/benmarpompy/Page5.png'
+import pompy6 from '../static/projects/benmarpompy/Page6.png'
+import pompy7 from '../static/projects/benmarpompy/Page7.png'
+import pompy8 from '../static/projects/benmarpompy/Page8.png'
+
 const caloe = {
     title: 'Sklep internetowy i branding - Caloe.pl',
     subtitle: 'Realizacja sklepu internetowego z produktami aloesowymi i stworzenie brandingu dla marki Caloe.',
@@ -190,4 +212,25 @@ const hotic = {
     siteLink: 'https://hotic-polska.pl'
 }
 
-export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, liderenergia, hideisland, tabularii, procentowo, hotic }
+const bednarscy = {
+    title: 'Strona www połączona ze sklepem internetowym dla pracowni witraży "Bednarscy"',
+    subtitle: 'Witryna jest utworzona w klimatach premium, nawiązujących bezpośrednio do charakteru pracowni Klienta - zgodnie z jego wymaganiami i wizją.',
+    galleryHeader: 'Zobacz zdjęcia realizacji',
+    logo: bednarscyLogo,
+    gallery: [bed1, bed2, bed3, bed4, bed5, bed6, bed7, bed8, bed9, bed10],
+    siteButtonLabel: 'witrazebednarscy.pl',
+    siteLink: 'https://witrazebednarscy.pl'
+}
+
+const pompy = {
+    title: 'Strona www typu single page dla firmy Benmar Pompy',
+    subtitle: 'Kolejna z naszych realizacji dla firmy z grupy Benmar',
+    galleryHeader: 'Rzut oka na zdjęcia projektu',
+    logo: benmarpompyLogo,
+    gallery: [pompy1, pompy2, pompy3, pompy4, pompy5, pompy6, pompy7, pompy8],
+    siteButtonLabel: 'benmarpompy.pl',
+    siteLink: 'https://benmarpompy.pl'
+}
+
+export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, liderenergia,
+    hideisland, tabularii, procentowo, hotic, bednarscy, pompy }
