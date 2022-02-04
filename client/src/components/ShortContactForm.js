@@ -104,7 +104,7 @@ const ShortContactForm = ({header}) => {
 
                     </button>
                     <span>
-                        Zapoznałem się i akceptuję postanowienia <a href="" className="label--agreement__link">Polityki prywatności</a>.
+                        Zapoznałem się i akceptuję postanowienia <a href="/polityka-prywatnosci" className="label--agreement__link">Polityki prywatności</a>.
                     </span>
                 </label>
                 <button className="contact__submitBtn" onClick={(e) => { handleSubmit(e); }}>

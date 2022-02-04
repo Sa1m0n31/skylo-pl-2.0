@@ -89,6 +89,9 @@ app.get("/sklepy-internetowe-rypin", (req, res) => {
 app.get("/sklepy-internetowe-lipno", (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
+app.get("/darmowa-wycena", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 /* Nodemailer */
 let transporter = nodemailer.createTransport(smtpTransport ({

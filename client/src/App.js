@@ -24,6 +24,7 @@ import "aos/dist/aos.css";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import PageLocal from "./pages/PageLocal";
 import BlogPost from "./pages/BlogPost";
+import GoogleAds from "./pages/GoogleAds";
 
 function App() {
     useEffect(() => {
@@ -48,6 +49,8 @@ function App() {
               <Route exact path="/portfolio" element={<Portfolio />} />
               <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
 
+              <Route path="/darmowa-wycena" element={<GoogleAds />} />
+
               <Route path="/strony-internetowe-golub-dobrzyn" element={<PageLocal city="Golub-Dobrzyń" where="Golubiu-Dobrzyniu" />} />
               <Route path="/strony-internetowe-brodnica" element={<PageLocal city="Brodnica" where="Brodnicy" />} />
               <Route path="/sklepy-internetowe-rypin" element={<PageLocal city="Rypin" where="Rypinie" />} />
@@ -67,8 +70,10 @@ function App() {
               <Route path="/portfolio/bednarscy" element={<PortfolioWrapper page={12} />} />
               <Route path="/portfolio/benmar-pompy" element={<PortfolioWrapper page={13} />} />
               <Route path="/portfolio/benmar" element={<PortfolioWrapper page={14} />} />
+              <Route path="/portfolio/draft" element={<PortfolioWrapper page={15} />} />
 
               <Route path="/blog/jak-projektowac-strony-tworzenie-prototypow-makiet-wizualizacji-cz-1" element={<BlogPost article={1} />} />
+              <Route path="/blog/jak-projektowac-strony-tworzenie-prototypow-makiet-wizualizacji-cz-2" element={<BlogPost article={2} />} />
           </Switch>
       </Router>
 }

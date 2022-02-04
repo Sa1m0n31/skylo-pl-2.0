@@ -13,7 +13,7 @@ import smallLogo from '../static/img/skylo-small.png'
 import axios from "axios";
 import footer from "../data/footer";
 import background1 from '../static/img/skylopl-tlo.jpg'
-import background2 from '../static/img/landing-2.png'
+import background2 from '../static/img/landing-2.jpg'
 
 const Hero = () => {
     const [email, setEmail] = useState("");
@@ -229,7 +229,7 @@ const Hero = () => {
                     by osiągnąć sukces
                 </h2>
                 <p className="hero__main__text">
-                    Jesteśmy agencją, która wspiera w osiąganiu celów. Stawiamy na profesjonalizm oraz wysoką jakość obsługi i dostosowujemy indywidualnie do każdego Klienta.
+                    Jesteśmy agencją, która wspiera w osiąganiu celów. Stawiamy na profesjonalizm oraz wysoką jakość obsługi i dostosowujemy ofertę indywidualnie do każdego Klienta.
                 </p>
                 <a className="button button--hero center" href="/kontakt">
                     <svg>

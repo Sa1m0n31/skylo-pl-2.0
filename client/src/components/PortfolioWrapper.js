@@ -15,6 +15,7 @@ import PortfolioBednarscy from "../pages/PortfolioBednarscy";
 import PortfolioBenmarpompy from "../pages/PortfolioBenmarpompy";
 import PortfolioLiderenergia from "../pages/PortfolioLiderenergia";
 import PortfolioBenmar from "../pages/PortfolioBenmar";
+import PortfolioDraft from "../pages/PortfolioDraft4u";
 
 const PortfolioWrapper = ({page}) => {
     const [renderSwitch, setRenderSwitch] = useState(null);
@@ -62,6 +63,9 @@ const PortfolioWrapper = ({page}) => {
                 break;
             case 14:
                 setRenderSwitch(<PortfolioBenmar />);
+                break;
+            case 15:
+                setRenderSwitch(<PortfolioDraft />);
                 break;
             default:
                 window.location = '';

@@ -12,8 +12,16 @@ import flightmedia from '../static/img/FlightMedia-mockup.png'
 import bednarscy from "../static/projects/bednarscy/bednarscy-mockup.png";
 import benmarpompy from '../static/projects/benmarpompy/benmarpompy-mockup.png'
 import benmar from '../static/projects/benmar/benmar.png'
+import draft4u from '../static/projects/draft4u/draft4u-mockup.png'
 
 const portfolio = [
+    {
+        title: 'Aplikacja webowa',
+        subtitle: 'draft4u.com.pl',
+        img: draft4u,
+        link: '/draft',
+        website: 'https://draft4u.com.pl'
+    },
     {
         title: 'Strona i sklep internetowy',
         subtitle: 'witrazebednarscy.pl',
@@ -170,11 +178,11 @@ const smallPortfolios = [
             website: 'https://brunchbox.pl'
         },
         {
-            title: 'Sklep internetowy i branding',
-            subtitle: 'caloe.pl',
-            img: caloe,
-            link: '/caloe',
-            website: 'https://caloe.pl'
+            title: 'Aplikacja webowa',
+            subtitle: 'draft4u.com.pl',
+            img: draft4u,
+            link: '/draft',
+            website: 'https://draft4u.com.pl'
         },
         {
             title: 'Strona i sklep internetowy',

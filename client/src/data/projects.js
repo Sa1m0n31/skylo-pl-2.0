@@ -116,6 +116,18 @@ import ben4 from '../static/projects/benmar/Page5 (1).png'
 import ben5 from '../static/projects/benmar/Page6 (1).png'
 import ben6 from '../static/projects/benmar/Page7.png'
 
+import draftLogo from '../static/projects/draft4u/draft4u-logo.png'
+import draft1 from '../static/projects/draft4u/draft4u-1.png'
+import draft2 from '../static/projects/draft4u/draft4u-2.png'
+import draft3 from '../static/projects/draft4u/draft4u-3.png'
+import draft4 from '../static/projects/draft4u/draft4u-4.png'
+import draft5 from '../static/projects/draft4u/draft4u-5.png'
+import draft6 from '../static/projects/draft4u/draft4u-6.png'
+import draft7 from '../static/projects/draft4u/draft4u-7.png'
+import draft8 from '../static/projects/draft4u/draft4u-9.png'
+import draft9 from '../static/projects/draft4u/draft4u-10.png'
+import draft10 from '../static/projects/draft4u/draft4u-12.png'
+
 const caloe = {
     title: 'Sklep internetowy i branding - Caloe.pl',
     subtitle: 'Realizacja sklepu internetowego z produktami aloesowymi i stworzenie brandingu dla marki Caloe.',
@@ -256,5 +268,15 @@ const benmar = {
     siteLink: 'https://benmar.eu'
 }
 
+const draft = {
+    title: 'Aplikacja webowa Draft4U',
+    subtitle: 'Portal dla siatkarzy umożliwiający znalezienie zawodnikom swojego klubu.',
+    galleryHeader: 'Rzut oka na zdjęcia projektu',
+    logo: draftLogo,
+    gallery: [draft1, draft2, draft3, draft4, draft5, draft6, draft7, draft8, draft9, draft10],
+    siteButtonLabel: 'draft4u.com.pl',
+    siteLink: 'https://draft4u.com.pl'
+}
+
 export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, lider,
-    hideisland, tabularii, procentowo, hotic, bednarscy, pompy, benmar }
+    hideisland, tabularii, procentowo, hotic, bednarscy, pompy, benmar, draft }

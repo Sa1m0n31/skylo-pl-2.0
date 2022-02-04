@@ -28,6 +28,7 @@ const SmallPortfolio = ({type}) => {
 
         galleryModal.current.style.opacity = '0';
         galleryTop.style.opacity = '0';
+        galleryTop.style.zIndex = '-1';
         setTimeout(() => {
             galleryModal.current.style.zIndex = '-1';
             galleryModal.current.style.visibility = 'hidden';
@@ -40,6 +41,7 @@ const SmallPortfolio = ({type}) => {
 
         const galleryTop = document.createElement('div');
         galleryTop.classList.add('galleryTop');
+        galleryTop.style.zIndex = '100';
 
         galleryTop.appendChild(closeModalBtn);
         container.appendChild(galleryTop);

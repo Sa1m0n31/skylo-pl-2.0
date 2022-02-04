@@ -33,7 +33,7 @@ body {
     overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, p, caption, label, textarea, span, input, button, a {
+h1, h2, h3, h4, h5, h6, p, li, caption, label, textarea, span, input, button, a {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -179,11 +179,12 @@ ul {
 
 .hero__main__header {
     color: #fff;
-    font-size: 72px;
+    font-size: 4.5em;
 }
 
 .hero__main__text {
-    font-size: 24px;
+    /*font-size: 24px;*/
+    font-size: 1.5em;
     margin-top: 30px;
     color: #fff;
     max-width: 55%;
@@ -2229,4 +2230,219 @@ a.menu__contact__link:hover {
     margin: -40px auto 0;
     z-index: 2;
     position: relative;
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+    :root {
+        --siteWidth: clamp(200px, 90vw, 1200px);
+    }
+
+    .hero__main__header {
+        font-size: 52px;
+    }
+
+    .hero__main__text {
+        font-size: 18px;
+    }
+
+    .hero__main__thin {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .contact__left__label {
+        font-size: 14px;
+    }
+
+    .portfolio__item {
+        width: 350px;
+        height: 268px;
+    }
+
+    .hero__bottom__span {
+        font-size: 12px;
+    }
+
+    .shortForm {
+        margin-top: 70px;
+    }
+
+    .aboutUs__frame__header {
+        font-size: 18px;
+    }
+
+    .aboutUs__frame__text {
+        font-size: 13px;
+    }
+}
+
+.article ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.google {
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.google__header {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #313131;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.google__header__right {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.google__main {
+    margin-top: 20px;
+    margin-bottom: 0;
+    align-items: flex-start;
+}
+
+.google__main > section {
+    width: 47%;
+    margin-top: 20px;
+}
+
+.google__h {
+    color: var(--red);
+    font-size: 32px;
+}
+
+.google__h__white {
+    color: #fff;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+.google__list > li {
+    position: relative;
+    font-size: 17px;
+    margin: 4px 0 4px 30px;
+}
+
+.google__list > li::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 1px;
+    background: var(--red);
+}
+
+.google__h4:first-of-type {
+    margin-top: 25px;
+}
+
+.google__h4 {
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.google__h4 > a {
+    color: var(--red);
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.redArrow {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.google__testimonials {
+    margin: 25px 0 10px;
+}
+
+.google__testimonials__item {
+    padding: 20px;
+    border: 2px solid var(--red);
+    border-radius: 5px;
+    width: 48%;
+    height: 250px;
+}
+
+.google__testimonials__item__header {
+    font-size: 12px;
+}
+
+.google__testimonials__item__stars {
+    margin: -30px 0;
+    width: 100px;
+}
+
+.google__testimonials__item__text {
+    font-size: 14px;
+}
+
+.google__divider {
+    width: 1px;
+    height: 70vh;
+    background: #313131;
+    display: block;
+}
+
+.google__more {
+    justify-content: flex-start;
+}
+
+.google__more * {
+    font-size: 12px;
+    font-weight: 400;
+    color: #818181;
+    margin: 0 5px;
+    display: block;
+}
+
+.google__more a {
+    text-decoration: underline;
+}
+
+.google .contact__submitBtn,
+.google .label--agreement,
+.google .input,
+.google .label {
+    max-width: 100%;
+    width: 100%;
+}
+
+.google__h__white--form {
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.google__main .contact__left__label {
+    font-size: 14px !important;
+}
+
+.google .label--agreement {
+    margin: 0;
+}
+
+.google form {
+    margin-top: 12px;
+}
+
+.google form .google__h__white {
+    margin-bottom: 0;
+}
+
+.google .contact__submitBtn {
+    margin-top: -20px;
 }
