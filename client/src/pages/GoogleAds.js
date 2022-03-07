@@ -3,7 +3,7 @@ import logo from '../static/img/skylopl-logo.png'
 import redArrow from '../static/img/red-arrow.svg'
 import rating from '../static/img/rating.svg'
 import axios from "axios";
-import arrowDown from "../static/img/arrow-down.svg";
+import vector1 from "../static/img/vector-2.png";
 
 const GoogleAds = () => {
     const typesOfProjects = ['strona www', 'sklep internetowy', 'aplikacja webowa', 'projekt graficzny', 'projekt UX/UI', 'inny temat'];
@@ -126,6 +126,8 @@ const GoogleAds = () => {
     }
 
     return <div className="google">
+        <div className="backgroundImg backgroundImg--1">
+        </div>
         <header className="google__header page flex">
             <a className="google__header__imgWrapper" href="/">
                 <img className="btn__img" src={logo} alt="agencja-interaktywna-skylo" />

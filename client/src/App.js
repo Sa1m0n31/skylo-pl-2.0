@@ -71,6 +71,8 @@ function App() {
               <Route path="/portfolio/benmar-pompy" element={<PortfolioWrapper page={13} />} />
               <Route path="/portfolio/benmar" element={<PortfolioWrapper page={14} />} />
               <Route path="/portfolio/draft" element={<PortfolioWrapper page={15} />} />
+              <Route path="/portfolio/zimne-rzeczy" element={<PortfolioWrapper page={16} />} />
+              <Route path="/portfolio/bolingier" element={<PortfolioWrapper page={17} />} />
 
               <Route path="/blog/jak-projektowac-strony-tworzenie-prototypow-makiet-wizualizacji-cz-1" element={<BlogPost article={1} />} />
               <Route path="/blog/jak-projektowac-strony-tworzenie-prototypow-makiet-wizualizacji-cz-2" element={<BlogPost article={2} />} />

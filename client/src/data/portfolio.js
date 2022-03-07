@@ -13,6 +13,8 @@ import bednarscy from "../static/projects/bednarscy/bednarscy-mockup.png";
 import benmarpompy from '../static/projects/benmarpompy/benmarpompy-mockup.png'
 import benmar from '../static/projects/benmar/benmar.png'
 import draft4u from '../static/projects/draft4u/draft4u-mockup.png'
+import zimnerzeczy from '../static/img/zimnerzeczy-mockup.png';
+import bolingier from '../static/img/bolingier-mockup.png'
 
 const portfolio = [
     {
@@ -35,6 +37,20 @@ const portfolio = [
         img: caloe,
         link: '/caloe',
         website: 'https://caloe.pl'
+    },
+    {
+        title: 'Blog i sklep internetowy',
+        subtitle: 'zimnerzeczy.pl',
+        img: zimnerzeczy,
+        link: '/zimne-rzeczy',
+        website: 'https://zimnerzeczy.pl'
+    },
+    {
+        title: 'Sklep internetowy',
+        subtitle: 'bolingier.com',
+        img: bolingier,
+        link: '/bolingier',
+        website: 'https://bolingier.com'
     },
     {
         title: 'Strona internetowa',

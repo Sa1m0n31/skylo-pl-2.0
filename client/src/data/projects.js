@@ -128,6 +128,24 @@ import draft8 from '../static/projects/draft4u/draft4u-9.png'
 import draft9 from '../static/projects/draft4u/draft4u-10.png'
 import draft10 from '../static/projects/draft4u/draft4u-12.png'
 
+import zimneLogo from '../static/projects/zimnerzeczy/logo.png'
+import zimne1 from '../static/projects/zimnerzeczy/Page1.png'
+import zimne2 from '../static/projects/zimnerzeczy/Page3.png'
+import zimne3 from '../static/projects/zimnerzeczy/Page4.png'
+import zimne4 from '../static/projects/zimnerzeczy/Page5.png'
+import zimne5 from '../static/projects/zimnerzeczy/Page7.png'
+import zimne6 from '../static/projects/zimnerzeczy/Page8.png'
+
+import bolingierLogo from '../static/img/Bolingier.png'
+import bol1 from '../static/projects/bolingier/Page1.png'
+import bol2 from '../static/projects/bolingier/Page2.png'
+import bol3 from '../static/projects/bolingier/Page3.png'
+import bol4 from '../static/projects/bolingier/Page4.png'
+import bol5 from '../static/projects/bolingier/Page5.png'
+import bol6 from '../static/projects/bolingier/Page6.png'
+import bol7 from '../static/projects/bolingier/Page7.png'
+import bol8 from '../static/projects/bolingier/Page8.png'
+
 const caloe = {
     title: 'Sklep internetowy i branding - Caloe.pl',
     subtitle: 'Realizacja sklepu internetowego z produktami aloesowymi i stworzenie brandingu dla marki Caloe.',
@@ -278,5 +296,25 @@ const draft = {
     siteLink: 'https://draft4u.com.pl'
 }
 
-export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, lider,
-    hideisland, tabularii, procentowo, hotic, bednarscy, pompy, benmar, draft }
+const zimnerzeczy = {
+    title: 'Blog i sklep internetowy zimnerzeczy.pl',
+    subtitle: 'Blog miłośników zimna połączony z małym sklepem internetowym',
+    galleryHeader: 'Rzut oka na zdjęcia projektu',
+    logo: zimneLogo,
+    gallery: [zimne1, zimne2, zimne3, zimne4, zimne5, zimne6],
+    siteButtonLabel: 'zimnerzeczy.pl',
+    siteLink: 'https://zimnerzeczy.pl'
+}
+
+const bolingier = {
+    title: 'Sklep internetowy Bolingier.com',
+    subtitle: 'Sklep internetowy - dla tych "niegrzecznych" ;)',
+    galleryHeader: 'Rzut oka na zdjęcia projektu',
+    logo: bolingierLogo,
+    gallery: [bol1, bol2, bol3, bol4, bol5, bol6, bol7, bol8],
+    siteButtonLabel: 'bolingier.com',
+    siteLink: 'https://bolingier.com'
+}
+
+export { caloe, czp, flightmedia, drokam, kalchem, brunchbox, lider, hideisland, tabularii,
+    procentowo, hotic, bednarscy, pompy, benmar, draft, zimnerzeczy, bolingier }

@@ -27,6 +27,7 @@ const PortfolioSection = () => {
     const closeModal = () => {
         const galleryTop = document.querySelector('.galleryTop');
 
+        document.querySelector('.section--portfolio').style.zIndex = '3';
         galleryModal.current.style.opacity = '0';
         galleryTop.style.opacity = '0';
         setTimeout(() => {
@@ -41,6 +42,7 @@ const PortfolioSection = () => {
 
         const galleryTop = document.createElement('div');
         galleryTop.classList.add('galleryTop');
+        document.querySelector('.section--portfolio').style.zIndex = '103';
 
         galleryTop.appendChild(closeModalBtn);
         container.appendChild(galleryTop);

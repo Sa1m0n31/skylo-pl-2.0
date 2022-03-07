@@ -352,7 +352,7 @@ ul {
 }
 
 .backgroundImg--1 {
-    top: -50%;
+    top: 0%;
     left: -20%;
 }
 
@@ -2445,4 +2445,26 @@ a.menu__contact__link:hover {
 
 .google .contact__submitBtn {
     margin-top: -20px;
+}
+
+@media(-webkit-min-device-pixel-ratio: 1.05) {
+    .google__testimonials__item {
+        height: 300px;
+    }
+
+    .google__main .contact__left__label {
+        font-size: 12px !important;
+    }
+}
+
+.google .backgroundImg--1 {
+    background-image: url("../img/vector-3.png");
+    width: 70%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.google aside {
+    margin-bottom: 20px;
 }
